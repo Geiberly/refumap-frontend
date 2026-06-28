@@ -1,0 +1,13 @@
+const fs = require('fs');
+const lines = fs.readFileSync('src/pages/admin/DashboardPage.jsx', 'utf8').split('\n');
+lines[418] = "      { icon: '🏠', label: 'Refugios activos', value: valueOf(stats, 'refugios_activos'), tone: 'green', sublabel: 'Verificados' },";
+lines[419] = "      { icon: '🏥', label: 'Hospitales operativos', value: valueOf(stats, 'hospitales_operativos'), tone: 'blue', sublabel: 'Reportados' },";
+lines[420] = "      { icon: '📋', label: 'Reportes pendientes', value: pending, tone: 'amber', sublabel: 'Por revisar' },";
+lines[421] = "      { icon: '👷', label: 'Operadores activos', value: valueOf(stats, 'operadores_activos'), tone: 'purple', sublabel: 'En el sistema' },";
+lines[422] = "      { icon: '🚧', label: 'Vías bloqueadas', value: valueOf(stats, 'bloqueos_activos'), tone: 'red', sublabel: 'Activas' },";
+lines[423] = "      { icon: '⚠️', label: 'Zonas de peligro', value: valueOf(stats, 'puntos_peligro'), tone: 'red', sublabel: 'Alertas' },";
+lines[424] = "      { icon: '📦', label: 'Puntos de Mapa', value: valueOf(stats, 'total_puntos'), tone: 'green', sublabel: 'Registrados' },";
+lines[425] = "      { icon: '👨‍💻', label: 'Operadores activos', value: valueOf(stats, 'operadores_activos'), tone: 'blue', sublabel: 'Verificados' },";
+lines[426] = "      { icon: '❓', label: 'Reportes sin verificar', value: valueOf(stats, 'puntos_no_verificados'), tone: 'amber', sublabel: 'En espera' },";
+fs.writeFileSync('src/pages/admin/DashboardPage.jsx', lines.join('\n'), 'utf8');
+console.log("Done metrics");

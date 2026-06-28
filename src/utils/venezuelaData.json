@@ -1,0 +1,2935 @@
+[
+  {
+    "state": "Amazonas",
+    "municipalities": [
+      {
+        "municipality": "Alto Orinoco",
+        "parishes": [
+          "Alto Orinoco La Esmeralda",
+          "Huachamacare Acanaña",
+          "Marawaka Toky Shamanaña",
+          "Mavaka Mavaka",
+          "Sierra Parima Parimabé"
+        ]
+      },
+      {
+        "municipality": "Atabapo",
+        "parishes": [
+          "Ucata Laja Lisa",
+          "Yapacana Macuruco",
+          "Caname Guarinuma"
+        ]
+      },
+      {
+        "municipality": "Atures",
+        "parishes": [
+          "Fernando Girón Tovar",
+          "Luis Alberto Gómez",
+          "Pahueña Limón de Parhueña",
+          "Platanillal Platanillal"
+        ]
+      },
+      {
+        "municipality": "Autana",
+        "parishes": [
+          "Samariapo Samariapo",
+          "Sipapo Pendare",
+          "Munduapo Munduapo",
+          "Guayapo San Pedro del Orinoco"
+        ]
+      },
+      {
+        "municipality": "Manapiare",
+        "parishes": [
+          "Alto Ventuari Cacurí",
+          "Medio Ventuari Manami",
+          "Bajo Ventuari Marueta"
+        ]
+      },
+      {
+        "municipality": "Maroa",
+        "parishes": [
+          "Victorino",
+          "Comunidad"
+        ]
+      },
+      {
+        "municipality": "Río Negro",
+        "parishes": [
+          "Casiquiare Curimacare",
+          "Cocuy",
+          "San Carlos de Río Negro",
+          "Solano Solano"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Anzoátegui",
+    "municipalities": [
+      {
+        "municipality": "Anaco",
+        "parishes": [
+          "Anaco",
+          "San Joaquín"
+        ]
+      },
+      {
+        "municipality": "Aragua",
+        "parishes": [
+          "Cachipo",
+          "Aragua de Barcelona"
+        ]
+      },
+      {
+        "municipality": "Bolívar",
+        "parishes": [
+          "Bergatín",
+          "Caigua",
+          "El Carmen.",
+          "El Pilar",
+          "Naricual.",
+          "San Cristóbal"
+        ]
+      },
+      {
+        "municipality": "Bruzual",
+        "parishes": [
+          "Clarines",
+          "Guanape",
+          "Sabana de Uchire"
+        ]
+      },
+      {
+        "municipality": "Cajigal",
+        "parishes": [
+          "Onoto",
+          "San Pablo"
+        ]
+      },
+      {
+        "municipality": "Carvajal",
+        "parishes": [
+          "Valle de Guanape",
+          "Santa Bárbara"
+        ]
+      },
+      {
+        "municipality": "Diego Bautista Urbaneja",
+        "parishes": [
+          "Lechería",
+          "El Morro"
+        ]
+      },
+      {
+        "municipality": "Freites",
+        "parishes": [
+          "Cantaura",
+          "Libertador",
+          "Santa Rosa",
+          "Urica"
+        ]
+      },
+      {
+        "municipality": "Guanipa",
+        "parishes": [
+          "San José de Guanipa"
+        ]
+      },
+      {
+        "municipality": "Guanta",
+        "parishes": [
+          "Guanta",
+          "Chorrerón"
+        ]
+      },
+      {
+        "municipality": "Independencia",
+        "parishes": [
+          "Mamo",
+          "Soledad"
+        ]
+      },
+      {
+        "municipality": "Libertad",
+        "parishes": [
+          "San Mateo",
+          "El Carito",
+          "Santa Inés",
+          "La Romereña"
+        ]
+      },
+      {
+        "municipality": "McGregor",
+        "parishes": [
+          "El Chaparro",
+          "Tomás Alfaro",
+          "Calatrava"
+        ]
+      },
+      {
+        "municipality": "Miranda",
+        "parishes": [
+          "Atapirire",
+          "Boca del Pao",
+          "El Pao",
+          "Pariaguán"
+        ]
+      },
+      {
+        "municipality": "Monagas",
+        "parishes": [
+          "Mapire",
+          "Piar",
+          "Santa Clara",
+          "San Diego de Cabrutica",
+          "Uverito",
+          "Zuata"
+        ]
+      },
+      {
+        "municipality": "Peñalver",
+        "parishes": [
+          "Puerto Píritu",
+          "San Miguel",
+          "Sucre"
+        ]
+      },
+      {
+        "municipality": "Píritu",
+        "parishes": [
+          "Píritu",
+          "San Francisco"
+        ]
+      },
+      {
+        "municipality": "San Juan de Capistrano",
+        "parishes": [
+          "Boca de Uchire",
+          "Boca de Chávez"
+        ]
+      },
+      {
+        "municipality": "Santa Ana",
+        "parishes": [
+          "Pueblo Nuevo",
+          "Santa Ana"
+        ]
+      },
+      {
+        "municipality": "Simón Rodríguez",
+        "parishes": [
+          "Edmundo Barrios",
+          "Miguel Otero Silva"
+        ]
+      },
+      {
+        "municipality": "Sotillo",
+        "parishes": [
+          "Puerto La Cruz",
+          "Pozuelos"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Apure",
+    "municipalities": [
+      {
+        "municipality": "Achaguas",
+        "parishes": [
+          "Achaguas",
+          "Apurito",
+          "El Yagual",
+          "Guachara",
+          "Mucuritas",
+          "Queseras del medio"
+        ]
+      },
+      {
+        "municipality": "Biruaca",
+        "parishes": [
+          "Biruaca"
+        ]
+      },
+      {
+        "municipality": "Muñoz",
+        "parishes": [
+          "Bruzual",
+          "Mantecal",
+          "Quintero",
+          "Rincón Hondo",
+          "San Vicente"
+        ]
+      },
+      {
+        "municipality": "Páez",
+        "parishes": [
+          "Guasdualito",
+          "Aramendi",
+          "El Amparo",
+          "San Camilo",
+          "Urdaneta"
+        ]
+      },
+      {
+        "municipality": "Pedro Camejo",
+        "parishes": [
+          "San Juan de Payara",
+          "Codazzi",
+          "Cunaviche"
+        ]
+      },
+      {
+        "municipality": "Rómulo Gallegos",
+        "parishes": [
+          "Elorza",
+          "La Trinidad"
+        ]
+      },
+      {
+        "municipality": "San Fernando",
+        "parishes": [
+          "San Fernando",
+          "El Recreo",
+          "Peñalver",
+          "San Rafael de Atamaica"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Aragua",
+    "municipalities": [
+      {
+        "municipality": "Bolívar",
+        "parishes": [
+          "Bolívar"
+        ]
+      },
+      {
+        "municipality": "Camatagua",
+        "parishes": [
+          "Camatagua",
+          "Carmen de Cura"
+        ]
+      },
+      {
+        "municipality": "Francisco Linares Alcántara",
+        "parishes": [
+          "Santa Rita",
+          "Francisco de Miranda",
+          "Moseñor Feliciano González"
+        ]
+      },
+      {
+        "municipality": "Girardot",
+        "parishes": [
+          "Pedro José Ovalles",
+          "Joaquín Crespo",
+          "José Casanova Godoy",
+          "Madre María de San José",
+          "Andrés Eloy Blanco",
+          "Los Tacarigua",
+          "Las Delicias",
+          "Choroní"
+        ]
+      },
+      {
+        "municipality": "José Ángel Lamas",
+        "parishes": [
+          "Santa Cruz"
+        ]
+      },
+      {
+        "municipality": "José Félix Ribas",
+        "parishes": [
+          "José Félix Ribas",
+          "Castor Nieves Ríos",
+          "Las Guacamayas",
+          "Pao de Zárate",
+          "Zuata"
+        ]
+      },
+      {
+        "municipality": "José Rafael Revenga",
+        "parishes": [
+          "José Rafael Revenga"
+        ]
+      },
+      {
+        "municipality": "Libertador",
+        "parishes": [
+          "Palo Negro",
+          "San Martín de Porres"
+        ]
+      },
+      {
+        "municipality": "Mario Briceño Iragorry",
+        "parishes": [
+          "El Limón",
+          "Caña de Azúcar"
+        ]
+      },
+      {
+        "municipality": "Ocumare de la Costa de Oro",
+        "parishes": [
+          "Ocumare de la Costa"
+        ]
+      },
+      {
+        "municipality": "San Casimiro",
+        "parishes": [
+          "San Casimiro",
+          "Güiripa",
+          "Ollas de Caramacate",
+          "Valle Morín"
+        ]
+      },
+      {
+        "municipality": "San Sebastián",
+        "parishes": [
+          "San Sebastián"
+        ]
+      },
+      {
+        "municipality": "Santiago Mariño",
+        "parishes": [
+          "Turmero",
+          "Arevalo Aponte",
+          "Chuao",
+          "Samán de Güere",
+          "Alfredo Pacheco Miranda"
+        ]
+      },
+      {
+        "municipality": "Santos Michelena",
+        "parishes": [
+          "Santos Michelena",
+          "Tiara"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Cagua",
+          "Bella Vista"
+        ]
+      },
+      {
+        "municipality": "Tovar",
+        "parishes": [
+          "Tovar"
+        ]
+      },
+      {
+        "municipality": "Urdaneta",
+        "parishes": [
+          "Urdaneta",
+          "Las Peñitas",
+          "San Francisco de Cara",
+          "Taguay"
+        ]
+      },
+      {
+        "municipality": "Zamora",
+        "parishes": [
+          "Zamora",
+          "Magdaleno",
+          "San Francisco de Asís",
+          "Valles de Tucutunemo",
+          "Augusto Mijares"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Barinas",
+    "municipalities": [
+      {
+        "municipality": "Alberto Arvelo Torrealba",
+        "parishes": [
+          "Sabaneta",
+          "Juan Antonio Rodríguez Domínguez"
+        ]
+      },
+      {
+        "municipality": "Andrés Eloy Blanco",
+        "parishes": [
+          "El Cantón",
+          "Santa Cruz de Guacas",
+          "Puerto Vivas"
+        ]
+      },
+      {
+        "municipality": "Antonio José de Sucre",
+        "parishes": [
+          "Ticoporo",
+          "Nicolás Pulido",
+          "Andrés Bello"
+        ]
+      },
+      {
+        "municipality": "Arismendi",
+        "parishes": [
+          "Arismendi",
+          "Guadarrama",
+          "La Unión",
+          "San Antonio"
+        ]
+      },
+      {
+        "municipality": "Barinas",
+        "parishes": [
+          "Barinas",
+          "Alberto Arvelo Larriva",
+          "San Silvestre",
+          "Santa Inés",
+          "Santa Lucía",
+          "Torunos",
+          "El Carmen",
+          "Rómulo Betancourt",
+          "Corazón de Jesús",
+          "Ramón Ignacio Méndez",
+          "Alto Barinas",
+          "Manuel Palacio Fajardo",
+          "Juan Antonio Rodríguez Domínguez",
+          "Dominga Ortiz de Páez"
+        ]
+      },
+      {
+        "municipality": "Bolívar",
+        "parishes": [
+          "Barinitas",
+          "Altamira de Cáceres",
+          "Calderas"
+        ]
+      },
+      {
+        "municipality": "Cruz Paredes",
+        "parishes": [
+          "Barrancas",
+          "El Socorro",
+          "Mazparrito"
+        ]
+      },
+      {
+        "municipality": "Ezequiel Zamora",
+        "parishes": [
+          "Santa Bárbara",
+          "Pedro Briceño Méndez",
+          "Ramón Ignacio Méndez",
+          "José Ignacio del Pumar"
+        ]
+      },
+      {
+        "municipality": "Obispos",
+        "parishes": [
+          "Obispos",
+          "Los Guasimitos",
+          "El Real",
+          "La Luz"
+        ]
+      },
+      {
+        "municipality": "Pedraza",
+        "parishes": [
+          "Ciudad Bolívia",
+          "José Ignacio Briceño",
+          "José Félix Ribas",
+          "Páez"
+        ]
+      },
+      {
+        "municipality": "Rojas",
+        "parishes": [
+          "Libertad",
+          "Dolores",
+          "Santa Rosa",
+          "Palacio Fajardo",
+          "Simón Rodríguez"
+        ]
+      },
+      {
+        "municipality": "Sosa",
+        "parishes": [
+          "Ciudad de Nutrias",
+          "El Regalo",
+          "Puerto Nutrias",
+          "Santa Catalina",
+          "Simón Bolívar"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Bolívar",
+    "municipalities": [
+      {
+        "municipality": "Angostura",
+        "parishes": [
+          "Raúl Leoni",
+          "Barceloneta",
+          "Santa Bárbara",
+          "San Francisco"
+        ]
+      },
+      {
+        "municipality": "Caroní",
+        "parishes": [
+          "Cachamay",
+          "Chirica",
+          "Dalla Costa",
+          "Once de Abril",
+          "Simón Bolívar",
+          "Unare",
+          "Universidad",
+          "Vista al Sol",
+          "Pozo Verde",
+          "Yocoima",
+          "5 de Julio"
+        ]
+      },
+      {
+        "municipality": "Cedeño",
+        "parishes": [
+          "Cedeño",
+          "Altagracia",
+          "Ascensión Farreras",
+          "Guaniamo",
+          "La Urbana",
+          "Pijiguaos"
+        ]
+      },
+      {
+        "municipality": "El Callao",
+        "parishes": [
+          "El Callao"
+        ]
+      },
+      {
+        "municipality": "Gran Sabana",
+        "parishes": [
+          "Gran Sabana",
+          "Ikabarú"
+        ]
+      },
+      {
+        "municipality": "Heres",
+        "parishes": [
+          "Catedral",
+          "Zea",
+          "Orinoco",
+          "José Antonio Páez",
+          "Marhuanta",
+          "Agua Salada",
+          "Vista Hermosa",
+          "La Sabanita",
+          "Panapana"
+        ]
+      },
+      {
+        "municipality": "Píar",
+        "parishes": [
+          "Andrés Eloy Blanco",
+          "Pedro Cova"
+        ]
+      },
+      {
+        "municipality": "Roscio",
+        "parishes": [
+          "Roscio",
+          "Salóm"
+        ]
+      },
+      {
+        "municipality": "Sifontes",
+        "parishes": [
+          "Sifontes",
+          "Dalla Costa",
+          "San Isidro"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Sucre",
+          "Aripao",
+          "Guarataro",
+          "Las Majadas",
+          "Moitaco"
+        ]
+      },
+      {
+        "municipality": "Padre Pedro Chien",
+        "parishes": [
+          "Padre Pedro Chien",
+          "Río Grande"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Carabobo",
+    "municipalities": [
+      {
+        "municipality": "Bejuma",
+        "parishes": [
+          "Bejuma",
+          "Canoabo",
+          "Simón Bolívar"
+        ]
+      },
+      {
+        "municipality": "Carlos Arvelo",
+        "parishes": [
+          "Güigüe",
+          "Carabobo",
+          "Tacarigua"
+        ]
+      },
+      {
+        "municipality": "Diego Ibarra",
+        "parishes": [
+          "Mariara",
+          "Aguas Calientes"
+        ]
+      },
+      {
+        "municipality": "Guacara",
+        "parishes": [
+          "Ciudad Alianza",
+          "Guacara",
+          "Yagua"
+        ]
+      },
+      {
+        "municipality": "Mora",
+        "parishes": [
+          "Morón",
+          "Urama"
+        ]
+      },
+      {
+        "municipality": "Libertador",
+        "parishes": [
+          "Valencia",
+          "Campo Carabobo"
+        ]
+      },
+      {
+        "municipality": "Los Guayos",
+        "parishes": [
+          "Los Guayos"
+        ]
+      },
+      {
+        "municipality": "Miranda",
+        "parishes": [
+          "Miranda"
+        ]
+      },
+      {
+        "municipality": "Montalbán",
+        "parishes": [
+          "Montalbán"
+        ]
+      },
+      {
+        "municipality": "Naguanagua",
+        "parishes": [
+          "Naguanagua"
+        ]
+      },
+      {
+        "municipality": "Puerto Cabello",
+        "parishes": [
+          "Bartolomé Salóm",
+          "Democracia",
+          "Fraternidad",
+          "Goaigoaza",
+          "Juan José Flores",
+          "Unión",
+          "Borburata",
+          "Patanemo"
+        ]
+      },
+      {
+        "municipality": "San Diego",
+        "parishes": [
+          "San Diego"
+        ]
+      },
+      {
+        "municipality": "San Joaquín",
+        "parishes": [
+          "San Joaquín"
+        ]
+      },
+      {
+        "municipality": "Valencia",
+        "parishes": [
+          "Urbana Candelaria",
+          "Urbana Catedral",
+          "Urbana El Socorro",
+          "Urbana Miguel Peña",
+          "Urbana Rafael Urdaneta",
+          "Urbana San Blas",
+          "Urbana San José",
+          "Urbana Santa Rosa",
+          "No Urbana Negro Primero"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Cojedes",
+    "municipalities": [
+      {
+        "municipality": "Anzoátegui",
+        "parishes": [
+          "Cojedes",
+          "Juan de Mata Suárez"
+        ]
+      },
+      {
+        "municipality": "Tinaquillo",
+        "parishes": [
+          "Tinaquillo"
+        ]
+      },
+      {
+        "municipality": "Girardot",
+        "parishes": [
+          "El Baúl",
+          "Sucre"
+        ]
+      },
+      {
+        "municipality": "Lima Blanco",
+        "parishes": [
+          "La Aguadita",
+          "Macapo"
+        ]
+      },
+      {
+        "municipality": "Pao de San Juan Bautista",
+        "parishes": [
+          "El Pao"
+        ]
+      },
+      {
+        "municipality": "Ricaurte",
+        "parishes": [
+          "El Amparo",
+          "Libertad de Cojedes"
+        ]
+      },
+      {
+        "municipality": "Rómulo Gallegos",
+        "parishes": [
+          "Rómulo Gallegos"
+        ]
+      },
+      {
+        "municipality": "San Carlos",
+        "parishes": [
+          "San Carlos de Austria",
+          "Juan Ángel Bravo",
+          "Manuel Manrique"
+        ]
+      },
+      {
+        "municipality": "Tinaco",
+        "parishes": [
+          "General en Jefe José Laurencio Silva"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Delta Amacuro",
+    "municipalities": [
+      {
+        "municipality": "Antonio Díaz",
+        "parishes": [
+          "Curiapo",
+          "Almirante Luis Brión",
+          "Francisco Aniceto Lugo Boca de Cuyubini",
+          "Manuel Renaud",
+          "Padre Barral",
+          "Santos de Abelgas"
+        ]
+      },
+      {
+        "municipality": "Casacoima",
+        "parishes": [
+          "Imataca Moruca",
+          "Cinco de Julio Piacoa",
+          "Juan Bautista Arismendi",
+          "Manuel Piar Santa Catalina",
+          "Rómulo Gallegos"
+        ]
+      },
+      {
+        "municipality": "Pedernales",
+        "parishes": [
+          "Pedernales",
+          "Luis Beltrán Prieto Figueroa"
+        ]
+      },
+      {
+        "municipality": "Tucupita",
+        "parishes": [
+          "San José",
+          "José Vidal Marcano Caparal de Guara",
+          "Juan Millán",
+          "Leonardo Ruíz Pineda Paloma",
+          "Mariscal Antonio José de Sucre",
+          "Monseñor Argimiro García San Rafael",
+          "San Rafael",
+          "Virgen del Valle"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Falcón",
+    "municipalities": [
+      {
+        "municipality": "Acosta",
+        "parishes": [
+          "Capadare",
+          "La Pastora",
+          "Libertador",
+          "San Juan de los Cayos"
+        ]
+      },
+      {
+        "municipality": "Bolívar",
+        "parishes": [
+          "Aracua",
+          "La Peña",
+          "San Luis"
+        ]
+      },
+      {
+        "municipality": "Buchivacoa",
+        "parishes": [
+          "Bariro",
+          "Borojó",
+          "Capatárida",
+          "Guajiro",
+          "Seque",
+          "Zazárida",
+          "Valle de Eroa"
+        ]
+      },
+      {
+        "municipality": "Carirubana",
+        "parishes": [
+          "Norte",
+          "Carirubana",
+          "Santa Ana",
+          "Urbana Punta Cardón"
+        ]
+      },
+      {
+        "municipality": "Colina",
+        "parishes": [
+          "La Vela de Coro",
+          "Acurigua",
+          "Guaibacoa",
+          "Las Calderas",
+          "Macoruca"
+        ]
+      },
+      {
+        "municipality": "Dabajuro",
+        "parishes": [
+          "Dabajuro"
+        ]
+      },
+      {
+        "municipality": "Democracia",
+        "parishes": [
+          "Agua Clara",
+          "Avaria",
+          "Pedregal",
+          "Piedra Grande",
+          "Purureche"
+        ]
+      },
+      {
+        "municipality": "Falcón",
+        "parishes": [
+          "Adaure",
+          "Adícora",
+          "Baraived",
+          "Buena Vista",
+          "Jadacaquiva",
+          "El Vínculo",
+          "El Hato",
+          "Moruy",
+          "Pueblo Nuevo"
+        ]
+      },
+      {
+        "municipality": "Federación",
+        "parishes": [
+          "Agua Larga",
+          "Churuguara",
+          "El Paují",
+          "Independencia",
+          "Mapararí"
+        ]
+      },
+      {
+        "municipality": "Jacura",
+        "parishes": [
+          "Agua Linda",
+          "Araurima",
+          "Jacura"
+        ]
+      },
+      {
+        "municipality": "Los Taques",
+        "parishes": [
+          "Los Taques",
+          "Judibana"
+        ]
+      },
+      {
+        "municipality": "Manaure",
+        "parishes": [
+          "Cacique Manaure"
+        ]
+      },
+      {
+        "municipality": "Mauroa",
+        "parishes": [
+          "Mene de Mauroa",
+          "San Félix",
+          "Casigua"
+        ]
+      },
+      {
+        "municipality": "Miranda",
+        "parishes": [
+          "Guzmán Guillermo",
+          "Mitare",
+          "Río Seco",
+          "Sabaneta",
+          "San Antonio",
+          "San Gabriel",
+          "Santa Ana"
+        ]
+      },
+      {
+        "municipality": "Monseñor Iturriza",
+        "parishes": [
+          "Boca del Tocuyo",
+          "Chichiriviche",
+          "Tocuyo de la Costa"
+        ]
+      },
+      {
+        "municipality": "Palmasola",
+        "parishes": [
+          "Palmasola"
+        ]
+      },
+      {
+        "municipality": "Petit",
+        "parishes": [
+          "Cabure",
+          "Colina",
+          "Curimagua"
+        ]
+      },
+      {
+        "municipality": "Píritu",
+        "parishes": [
+          "San José de la Costa",
+          "Píritu"
+        ]
+      },
+      {
+        "municipality": "San Francisco",
+        "parishes": [
+          "Capital San Francisco"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Sucre",
+          "Pecaya"
+        ]
+      },
+      {
+        "municipality": "Silva",
+        "parishes": [
+          "Tucacas",
+          "Boca de Aroa"
+        ]
+      },
+      {
+        "municipality": "Tocópero",
+        "parishes": [
+          "Tocópero"
+        ]
+      },
+      {
+        "municipality": "Unión",
+        "parishes": [
+          "El Charal",
+          "Las Vegas del Tuy",
+          "Santa Cruz de Bucaral"
+        ]
+      },
+      {
+        "municipality": "Urumaco",
+        "parishes": [
+          "Bruzual",
+          "Urumaco"
+        ]
+      },
+      {
+        "municipality": "Zamora",
+        "parishes": [
+          "Puerto Cumarebo",
+          "La Ciénaga",
+          "La Soledad",
+          "Pueblo Cumarebo",
+          "Zazárida"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Guárico",
+    "municipalities": [
+      {
+        "municipality": "Camaguán",
+        "parishes": [
+          "Camaguán",
+          "Puerto Miranda",
+          "Uverito"
+        ]
+      },
+      {
+        "municipality": "Chaguaramas",
+        "parishes": [
+          "Chaguaramas"
+        ]
+      },
+      {
+        "municipality": "El Socorro",
+        "parishes": [
+          "El Socorro"
+        ]
+      },
+      {
+        "municipality": "Infante",
+        "parishes": [
+          "Valle de la Pascua",
+          "Espino"
+        ]
+      },
+      {
+        "municipality": "Las Mercedes",
+        "parishes": [
+          "Las Mercedes",
+          "Cabruta",
+          "Santa Rita de Manapire"
+        ]
+      },
+      {
+        "municipality": "Mellado",
+        "parishes": [
+          "El Sombrero",
+          "Sosa"
+        ]
+      },
+      {
+        "municipality": "Miranda",
+        "parishes": [
+          "El Calvario",
+          "El Rastro",
+          "Guardatinajas",
+          "Capital Urbana Calabozo"
+        ]
+      },
+      {
+        "municipality": "Monagas",
+        "parishes": [
+          "Altagracia de Orituco",
+          "San Rafael de Orituco",
+          "San Francisco Javier de Lezama",
+          "Paso Real de Macaira",
+          "Carlos Soublette",
+          "San Francisco de Macaira",
+          "Libertad de Orituco"
+        ]
+      },
+      {
+        "municipality": "Ortiz",
+        "parishes": [
+          "San José de Tiznados",
+          "San Francisco de Tiznados",
+          "San Lorenzo de Tiznados",
+          "Ortiz"
+        ]
+      },
+      {
+        "municipality": "Ribas",
+        "parishes": [
+          "Tucupido",
+          "San Rafael de Laya"
+        ]
+      },
+      {
+        "municipality": "Roscio",
+        "parishes": [
+          "Cantagallo",
+          "San Juan de los Morros",
+          "Parapara"
+        ]
+      },
+      {
+        "municipality": "San Gerónimo de Guayabal",
+        "parishes": [
+          "Guayabal",
+          "Cazorla"
+        ]
+      },
+      {
+        "municipality": "San José de Guaribe",
+        "parishes": [
+          "San José de Guaribe",
+          "Uveral"
+        ]
+      },
+      {
+        "municipality": "Santa María de Ipire",
+        "parishes": [
+          "Santa María de Ipire",
+          "Altamira"
+        ]
+      },
+      {
+        "municipality": "Zaraza",
+        "parishes": [
+          "Unare",
+          "Zaraza"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Lara",
+    "municipalities": [
+      {
+        "municipality": "Andrés Eloy Blanco",
+        "parishes": [
+          "Quebrada Honda de Guache",
+          "Pío Tamayo",
+          "Yacambú"
+        ]
+      },
+      {
+        "municipality": "Crespo",
+        "parishes": [
+          "Freitez",
+          "José María Blanco"
+        ]
+      },
+      {
+        "municipality": "Iribarren",
+        "parishes": [
+          "Catedral",
+          "Concepción",
+          "El Cují",
+          "Juan de Villegas",
+          "Santa Rosa",
+          "Tamaca",
+          "Unión",
+          "Aguedo Felipe Alvarado",
+          "Buena Vista",
+          "Juárez"
+        ]
+      },
+      {
+        "municipality": "Jiménez",
+        "parishes": [
+          "Juan Bautista Rodríguez",
+          "Cuara",
+          "Diego de Lozada",
+          "Paraíso de San José",
+          "San Miguel",
+          "Tintorero",
+          "José Bernardo Dorante",
+          "Coronel Mariano Peraza"
+        ]
+      },
+      {
+        "municipality": "Morán",
+        "parishes": [
+          "Anzoátegui",
+          "Bolívar",
+          "Guárico",
+          "Hilario Luna y Luna",
+          "Humocaro Bajo",
+          "Humocaro Alto",
+          "La Candelaria",
+          "Morán"
+        ]
+      },
+      {
+        "municipality": "Palavecino",
+        "parishes": [
+          "Cabudare",
+          "José Gregorio Bastidas",
+          "Agua Viva"
+        ]
+      },
+      {
+        "municipality": "Simón Planas",
+        "parishes": [
+          "Buría",
+          "Gustavo Vega",
+          "Sarare"
+        ]
+      },
+      {
+        "municipality": "Torres",
+        "parishes": [
+          "Altagracia",
+          "Antonio Díaz",
+          "Camacaro",
+          "Castañeda",
+          "Cecilio Zubillaga",
+          "Chiquinquira",
+          "El Blanco",
+          "Espinoza de los Monteros",
+          "Heriberto Arrollo",
+          "Lara",
+          "Las Mercedes",
+          "Manuel Morillo",
+          "Montaña Verde",
+          "Montes de Oca",
+          "Reyes de Vargas",
+          "Torres",
+          "Trinidad Samuel"
+        ]
+      },
+      {
+        "municipality": "Urdaneta",
+        "parishes": [
+          "Siquisique",
+          "San Miguel",
+          "Moroturo",
+          "Xaguas"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Mérida",
+    "municipalities": [
+      {
+        "municipality": "Alberto Adriani",
+        "parishes": [
+          "Presidente Betancourt",
+          "Presidente Páez",
+          "Presidente Rómulo Gallegos",
+          "Gabriel Picón González",
+          "Héctor Amable Mora",
+          "José Nucete Sardi",
+          "Pulido Méndez"
+        ]
+      },
+      {
+        "municipality": "Andrés Bello",
+        "parishes": [
+          "La Azulita"
+        ]
+      },
+      {
+        "municipality": "Antonio Pinto Salinas",
+        "parishes": [
+          "Santa Cruz de Mora",
+          "Mesa Bolívar",
+          "Mesa de Las Palmas"
+        ]
+      },
+      {
+        "municipality": "Aricagua",
+        "parishes": [
+          "Aricagua",
+          "San Antonio"
+        ]
+      },
+      {
+        "municipality": "Arzobispo Chacón",
+        "parishes": [
+          "Canagua",
+          "Capurí",
+          "Chacantá",
+          "El Molino",
+          "Guaimaral",
+          "Mucutuy",
+          "Mucuchachí"
+        ]
+      },
+      {
+        "municipality": "Campo Elías",
+        "parishes": [
+          "Fernández Peña",
+          "Matriz",
+          "Montalbán",
+          "Acequias",
+          "Jají",
+          "La Mesa",
+          "San José del Sur"
+        ]
+      },
+      {
+        "municipality": "Caracciolo Parra Olmedo",
+        "parishes": [
+          "Tucaní",
+          "Florencio Ramírez"
+        ]
+      },
+      {
+        "municipality": "Cardenal Quintero",
+        "parishes": [
+          "Santo Domingo",
+          "Las Piedras"
+        ]
+      },
+      {
+        "municipality": "Guaraque",
+        "parishes": [
+          "Guaraque",
+          "Mesa de Quintero",
+          "Río Negro"
+        ]
+      },
+      {
+        "municipality": "Julio César Salas",
+        "parishes": [
+          "Arapuey",
+          "Palmira"
+        ]
+      },
+      {
+        "municipality": "Justo Briceño",
+        "parishes": [
+          "San Cristóbal de Torondoy",
+          "Torondoy"
+        ]
+      },
+      {
+        "municipality": "Libertador",
+        "parishes": [
+          "Antonio Spinetti Dini",
+          "Arias",
+          "Caracciolo Parra Pérez",
+          "Domingo Peña",
+          "El Llano",
+          "Gonzalo Picón Febres",
+          "Jacinto Plaza",
+          "Juan Rodríguez Suárez",
+          "Lasso de la Vega",
+          "Mariano Picón Salas",
+          "Milla",
+          "Osuna Rodríguez",
+          "Sagrario",
+          "El Morro",
+          "Los Nevados"
+        ]
+      },
+      {
+        "municipality": "Miranda",
+        "parishes": [
+          "Andrés Eloy Blanco",
+          "La Venta",
+          "Piñango",
+          "Timotes"
+        ]
+      },
+      {
+        "municipality": "Obispo Ramos de Lora",
+        "parishes": [
+          "Eloy Paredes",
+          "San Rafael de Alcázar",
+          "Santa Elena de Arenales"
+        ]
+      },
+      {
+        "municipality": "Padre Noguera",
+        "parishes": [
+          "Santa María de Caparo"
+        ]
+      },
+      {
+        "municipality": "Pueblo Llano",
+        "parishes": [
+          "Pueblo Llano"
+        ]
+      },
+      {
+        "municipality": "Rangel",
+        "parishes": [
+          "Cacute",
+          "La Toma",
+          "Mucuchíes",
+          "Mucurubá",
+          "San Rafael"
+        ]
+      },
+      {
+        "municipality": "Rivas Dávila",
+        "parishes": [
+          "Gerónimo Maldonado",
+          "Bailadores"
+        ]
+      },
+      {
+        "municipality": "Santos Marquina",
+        "parishes": [
+          "Tabay"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Chiguará",
+          "Estánquez",
+          "Lagunillas",
+          "La Trampa",
+          "Pueblo Nuevo del Sur",
+          "San Juan"
+        ]
+      },
+      {
+        "municipality": "Tovar",
+        "parishes": [
+          "El Amparo",
+          "El Llano",
+          "San Francisco",
+          "Tovar"
+        ]
+      },
+      {
+        "municipality": "Tulio Febres Cordero",
+        "parishes": [
+          "Independencia",
+          "María de la Concepción Palacios Blanco",
+          "Nueva Bolivia",
+          "Santa Apolonia"
+        ]
+      },
+      {
+        "municipality": "Zea",
+        "parishes": [
+          "Caño El Tigre",
+          "Zea"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Miranda",
+    "municipalities": [
+      {
+        "municipality": "Acevedo",
+        "parishes": [
+          "Aragüita",
+          "Arévalo González",
+          "Capaya",
+          "Caucagua",
+          "Panaquire",
+          "Ribas",
+          "El Café",
+          "Marizapa"
+        ]
+      },
+      {
+        "municipality": "Andrés Bello",
+        "parishes": [
+          "Cumbo",
+          "San José de Barlovento"
+        ]
+      },
+      {
+        "municipality": "Baruta",
+        "parishes": [
+          "El Cafetal",
+          "Las Minas",
+          "Nuestra Señora del Rosario"
+        ]
+      },
+      {
+        "municipality": "Brión",
+        "parishes": [
+          "Higuerote",
+          "Curiepe",
+          "Tacarigua de Brión"
+        ]
+      },
+      {
+        "municipality": "Buroz",
+        "parishes": [
+          "Mamporal"
+        ]
+      },
+      {
+        "municipality": "Carrizal",
+        "parishes": [
+          "Carrizal"
+        ]
+      },
+      {
+        "municipality": "Chacao",
+        "parishes": [
+          "Chacao"
+        ]
+      },
+      {
+        "municipality": "Cristóbal Rojas",
+        "parishes": [
+          "Charallave",
+          "Las Brisas"
+        ]
+      },
+      {
+        "municipality": "El Hatillo",
+        "parishes": [
+          "El Hatillo"
+        ]
+      },
+      {
+        "municipality": "Guaicaipuro",
+        "parishes": [
+          "Altagracia de la Montaña",
+          "Cecilio Acosta",
+          "Los Teques",
+          "El Jarillo",
+          "San Pedro.",
+          "Tácata",
+          "Paracotos"
+        ]
+      },
+      {
+        "municipality": "Independencia",
+        "parishes": [
+          "Cartanal",
+          "Santa Teresa del Tuy"
+        ]
+      },
+      {
+        "municipality": "Lander",
+        "parishes": [
+          "La Democracia",
+          "Ocumare del Tuy",
+          "Santa Bárbara"
+        ]
+      },
+      {
+        "municipality": "Los Salias",
+        "parishes": [
+          "San Antonio de los Altos"
+        ]
+      },
+      {
+        "municipality": "Páez",
+        "parishes": [
+          "Río Chico",
+          "El Guapo",
+          "Tacarigua de la Laguna",
+          "Paparo",
+          "San Fernando del Guapo"
+        ]
+      },
+      {
+        "municipality": "Paz Castillo",
+        "parishes": [
+          "Santa Lucía del Tuy"
+        ]
+      },
+      {
+        "municipality": "Pedro Gual",
+        "parishes": [
+          "Cúpira",
+          "Machurucuto"
+        ]
+      },
+      {
+        "municipality": "Plaza",
+        "parishes": [
+          "Guarenas"
+        ]
+      },
+      {
+        "municipality": "Simón Bolívar",
+        "parishes": [
+          "San Antonio de Yare",
+          "San Francisco de Yare"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Leoncio Martínez",
+          "Petare",
+          "Caucagüita",
+          "Filas de Mariche",
+          "La Dolorita"
+        ]
+      },
+      {
+        "municipality": "Urdaneta",
+        "parishes": [
+          "Cúa",
+          "Nueva Cúa"
+        ]
+      },
+      {
+        "municipality": "Zamora",
+        "parishes": [
+          "Guatire",
+          "Bolívar"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Monagas",
+    "municipalities": [
+      {
+        "municipality": "Acosta",
+        "parishes": [
+          "San Antonio de Maturín",
+          "San Francisco de Maturín"
+        ]
+      },
+      {
+        "municipality": "Aguasay",
+        "parishes": [
+          "Aguasay"
+        ]
+      },
+      {
+        "municipality": "Bolívar",
+        "parishes": [
+          "Caripito"
+        ]
+      },
+      {
+        "municipality": "Caripe",
+        "parishes": [
+          "El Guácharo",
+          "La Guanota",
+          "Sabana de Piedra",
+          "San Agustín",
+          "Teresen",
+          "Caripe"
+        ]
+      },
+      {
+        "municipality": "Cedeño",
+        "parishes": [
+          "Areo",
+          "Capital Cedeño",
+          "San Félix de Cantalicio",
+          "Viento Fresco"
+        ]
+      },
+      {
+        "municipality": "Ezequiel Zamora",
+        "parishes": [
+          "El Tejero",
+          "Punta de Mata"
+        ]
+      },
+      {
+        "municipality": "Libertador",
+        "parishes": [
+          "Chaguaramas",
+          "Las Alhuacas",
+          "Tabasca",
+          "Temblador"
+        ]
+      },
+      {
+        "municipality": "Maturín",
+        "parishes": [
+          "Alto de los Godos",
+          "Boquerón",
+          "Las Cocuizas",
+          "La Cruz",
+          "San Simón",
+          "El Corozo",
+          "El Furrial",
+          "Jusepín",
+          "La Pica",
+          "San Vicente"
+        ]
+      },
+      {
+        "municipality": "Piar",
+        "parishes": [
+          "Aparicio",
+          "Aragua de Maturín",
+          "Chaguamal",
+          "El Pinto",
+          "Guanaguana",
+          "La Toscana",
+          "Taguaya"
+        ]
+      },
+      {
+        "municipality": "Punceres",
+        "parishes": [
+          "Cachipo",
+          "Quiriquire"
+        ]
+      },
+      {
+        "municipality": "Santa Bárbara",
+        "parishes": [
+          "Santa Bárbara"
+        ]
+      },
+      {
+        "municipality": "Sotillo",
+        "parishes": [
+          "Barrancas",
+          "Los Barrancos de Fajardo"
+        ]
+      },
+      {
+        "municipality": "Uracoa",
+        "parishes": [
+          "Uracoa"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Nueva Esparta",
+    "municipalities": [
+      {
+        "municipality": "Antolín del Campo",
+        "parishes": [
+          "Antolín del Campo"
+        ]
+      },
+      {
+        "municipality": "Arismendi",
+        "parishes": [
+          "Arismendi"
+        ]
+      },
+      {
+        "municipality": "Díaz",
+        "parishes": [
+          "San Juan Bautista",
+          "Zabala"
+        ]
+      },
+      {
+        "municipality": "García",
+        "parishes": [
+          "García",
+          "Francisco Fajardo"
+        ]
+      },
+      {
+        "municipality": "Gómez",
+        "parishes": [
+          "Bolívar",
+          "Guevara",
+          "Cerro de Matasiete",
+          "Santa Ana",
+          "Sucre"
+        ]
+      },
+      {
+        "municipality": "Maneiro",
+        "parishes": [
+          "Aguirre",
+          "Maneiro"
+        ]
+      },
+      {
+        "municipality": "Marcano",
+        "parishes": [
+          "Adrián",
+          "Juan Griego",
+          "Yaguaraparo"
+        ]
+      },
+      {
+        "municipality": "Mariño",
+        "parishes": [
+          "Porlamar"
+        ]
+      },
+      {
+        "municipality": "Península de Macanao",
+        "parishes": [
+          "San Francisco de Macanao",
+          "Boca de Río"
+        ]
+      },
+      {
+        "municipality": "Tubores",
+        "parishes": [
+          "Tubores",
+          "Los Barales"
+        ]
+      },
+      {
+        "municipality": "Villalba",
+        "parishes": [
+          "Vicente Fuentes",
+          "Villalba"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Portuguesa",
+    "municipalities": [
+      {
+        "municipality": "Agua Blanca",
+        "parishes": [
+          "Agua Blanca"
+        ]
+      },
+      {
+        "municipality": "Araure",
+        "parishes": [
+          "Araure",
+          "Río Acarigua"
+        ]
+      },
+      {
+        "municipality": "Esteller",
+        "parishes": [
+          "Píritu",
+          "Uveral"
+        ]
+      },
+      {
+        "municipality": "Guanare",
+        "parishes": [
+          "Cordova",
+          "Guanare",
+          "San José de la Montaña",
+          "San Juan de Guanaguanare",
+          "Virgen de Coromoto"
+        ]
+      },
+      {
+        "municipality": "Guanarito",
+        "parishes": [
+          "Guanarito",
+          "Trinidad de la Capilla",
+          "Divina Pastora"
+        ]
+      },
+      {
+        "municipality": "Monseñor José Vicente de Unda",
+        "parishes": [
+          "Peña Blanca"
+        ]
+      },
+      {
+        "municipality": "Ospino",
+        "parishes": [
+          "Aparición",
+          "La Estación",
+          "Ospino"
+        ]
+      },
+      {
+        "municipality": "Páez",
+        "parishes": [
+          "Acarigua",
+          "Payara",
+          "Pimpinela",
+          "Ramón Peraza"
+        ]
+      },
+      {
+        "municipality": "Papelón",
+        "parishes": [
+          "Caño Delgadito",
+          "Papelón"
+        ]
+      },
+      {
+        "municipality": "San Genaro de Boconoíto",
+        "parishes": [
+          "Antolín Tovar Anquino",
+          "Boconoíto"
+        ]
+      },
+      {
+        "municipality": "San Rafael de Onoto",
+        "parishes": [
+          "Santa Fé",
+          "San Rafael de Onoto",
+          "Thermo Morales"
+        ]
+      },
+      {
+        "municipality": "Santa Rosalía",
+        "parishes": [
+          "Florida",
+          "El Playón"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Biscucuy",
+          "Concepción",
+          "San José de Saguaz",
+          "San Rafael de Palo Alzado",
+          "Uvencio Antonio Velásquez",
+          "Villa Rosa"
+        ]
+      },
+      {
+        "municipality": "Turén",
+        "parishes": [
+          "Canelones",
+          "Santa Cruz",
+          "San Isidro Labrador"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Sucre",
+    "municipalities": [
+      {
+        "municipality": "Andrés Eloy Blanco",
+        "parishes": [
+          "Mariño",
+          "Rómulo Gallegos"
+        ]
+      },
+      {
+        "municipality": "Andrés Mata",
+        "parishes": [
+          "San José de Aerocuar",
+          "Tavera Acosta"
+        ]
+      },
+      {
+        "municipality": "Arismendi",
+        "parishes": [
+          "Río Caribe",
+          "Antonio José de Sucre",
+          "El Morro de Puerto Santo",
+          "Puerto Santo",
+          "San Juan de las Galdonas"
+        ]
+      },
+      {
+        "municipality": "Benítez",
+        "parishes": [
+          "El Pilar",
+          "El Rincón",
+          "General Francisco Antonio Váquez",
+          "Guaraúnos",
+          "Tunapuicito",
+          "Unión"
+        ]
+      },
+      {
+        "municipality": "Bermúdez",
+        "parishes": [
+          "Santa Catalina",
+          "Santa Rosa",
+          "Santa Teresa",
+          "Bolívar",
+          "Maracapana"
+        ]
+      },
+      {
+        "municipality": "Bolívar",
+        "parishes": []
+      },
+      {
+        "municipality": "Cajigal",
+        "parishes": [
+          "Libertad",
+          "El Paujil",
+          "Yaguaraparo"
+        ]
+      },
+      {
+        "municipality": "Cruz Salmerón Acosta",
+        "parishes": [
+          "Cruz Salmerón Acosta",
+          "Chacopata",
+          "Manicuare"
+        ]
+      },
+      {
+        "municipality": "Libertador",
+        "parishes": [
+          "Tunapuy",
+          "Campo Elías"
+        ]
+      },
+      {
+        "municipality": "Mariño",
+        "parishes": [
+          "Irapa",
+          "Campo Claro",
+          "Maraval",
+          "San Antonio de Irapa",
+          "Soro"
+        ]
+      },
+      {
+        "municipality": "Mejía",
+        "parishes": [
+          "Mejía"
+        ]
+      },
+      {
+        "municipality": "Montes",
+        "parishes": [
+          "Cumanacoa",
+          "Arenas",
+          "Aricagua",
+          "Cocollar",
+          "San Fernando",
+          "San Lorenzo"
+        ]
+      },
+      {
+        "municipality": "Ribero",
+        "parishes": [
+          "Villa Frontado (Muelle de Cariaco)",
+          "Catuaro",
+          "Rendón",
+          "San Cruz",
+          "Santa María"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Altagracia Cumaná",
+          "Santa Inés Cumaná",
+          "Valentín Valiente Cumaná",
+          "Ayacucho Cumaná",
+          "San Juan",
+          "Raúl Leoni",
+          "Gran Mariscal"
+        ]
+      },
+      {
+        "municipality": "Valdez",
+        "parishes": [
+          "Cristóbal Colón",
+          "Bideau",
+          "Punta de Piedras",
+          "Güiria"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Táchira",
+    "municipalities": [
+      {
+        "municipality": "Andrés Bello",
+        "parishes": [
+          "Andrés Bello"
+        ]
+      },
+      {
+        "municipality": "Antonio Rómulo Costa",
+        "parishes": [
+          "Antonio Rómulo Costa"
+        ]
+      },
+      {
+        "municipality": "Ayacucho",
+        "parishes": [
+          "Ayacucho",
+          "Rivas Berti",
+          "San Pedro del Río"
+        ]
+      },
+      {
+        "municipality": "Bolívar",
+        "parishes": [
+          "Bolívar",
+          "Palotal",
+          "General Juan Vicente Gómez",
+          "Isaías Medina Angarita"
+        ]
+      },
+      {
+        "municipality": "Cárdenas",
+        "parishes": [
+          "Cárdenas",
+          "Amenodoro Rangel Lamus",
+          "La Florida"
+        ]
+      },
+      {
+        "municipality": "Córdoba",
+        "parishes": [
+          "Córdoba"
+        ]
+      },
+      {
+        "municipality": "Fernández Feo",
+        "parishes": [
+          "Fernández Feo",
+          "Alberto Adriani",
+          "Santo Domingo"
+        ]
+      },
+      {
+        "municipality": "Francisco de Miranda",
+        "parishes": [
+          "Francisco de Miranda"
+        ]
+      },
+      {
+        "municipality": "García de Hevia",
+        "parishes": [
+          "García de Hevia",
+          "Boca de Grita",
+          "José Antonio Páez"
+        ]
+      },
+      {
+        "municipality": "Guásimos",
+        "parishes": [
+          "Guásimos"
+        ]
+      },
+      {
+        "municipality": "Independencia",
+        "parishes": [
+          "Independencia",
+          "Juan Germán Roscio",
+          "Román Cárdenas"
+        ]
+      },
+      {
+        "municipality": "Jáuregui",
+        "parishes": [
+          "Jáuregui",
+          "Emilio Constantino Guerrero",
+          "Monseñor Miguel Antonio Salas"
+        ]
+      },
+      {
+        "municipality": "José María Vargas",
+        "parishes": [
+          "José María Vargas"
+        ]
+      },
+      {
+        "municipality": "Junín",
+        "parishes": [
+          "Junín",
+          "La Petrólea",
+          "Quinimarí",
+          "Bramón"
+        ]
+      },
+      {
+        "municipality": "Libertad",
+        "parishes": [
+          "Libertad",
+          "Cipriano Castro",
+          "Manuel Felipe Rugeles"
+        ]
+      },
+      {
+        "municipality": "Libertador",
+        "parishes": [
+          "Capital Libertador",
+          "Doradas",
+          "Emeterio Ochoa",
+          "San Joaquín de Navay"
+        ]
+      },
+      {
+        "municipality": "Lobatera",
+        "parishes": [
+          "Lobatera",
+          "Constitución"
+        ]
+      },
+      {
+        "municipality": "Michelena",
+        "parishes": [
+          "Michelena"
+        ]
+      },
+      {
+        "municipality": "Panamericano",
+        "parishes": [
+          "Panamericano",
+          "La Palmita"
+        ]
+      },
+      {
+        "municipality": "Pedro María Ureña",
+        "parishes": [
+          "Pedro María Ureña",
+          "Nueva Arcadia"
+        ]
+      },
+      {
+        "municipality": "Rafael Urdaneta",
+        "parishes": [
+          "Delicias",
+          "Pecaya"
+        ]
+      },
+      {
+        "municipality": "Samuel Darío Maldonado",
+        "parishes": [
+          "Samuel Darío Maldonado",
+          "Boconó",
+          "Hernández"
+        ]
+      },
+      {
+        "municipality": "San Cristóbal",
+        "parishes": [
+          "La Concordia",
+          "San Juan Bautista",
+          "Pedro María Morantes",
+          "San Sebastián",
+          "Dr. Francisco Romero Lobo"
+        ]
+      },
+      {
+        "municipality": "Seboruco",
+        "parishes": [
+          "Seboruco"
+        ]
+      },
+      {
+        "municipality": "Simón Rodríguez",
+        "parishes": [
+          "Simón Rodríguez"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Sucre",
+          "Eleazar López Contreras",
+          "San Pablo"
+        ]
+      },
+      {
+        "municipality": "Torbes",
+        "parishes": [
+          "San José Obrero",
+          "San Juan Eudes"
+        ]
+      },
+      {
+        "municipality": "Uribante",
+        "parishes": [
+          "Uribante",
+          "Cárdenas",
+          "Juan Pablo Peñalosa",
+          "Potosí"
+        ]
+      },
+      {
+        "municipality": "San Judas Tadeo",
+        "parishes": [
+          "San Judas Tadeo"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Trujillo",
+    "municipalities": [
+      {
+        "municipality": "Andrés Bello",
+        "parishes": [
+          "Araguaney",
+          "El Jaguito",
+          "La Esperanza",
+          "Santa Isabel"
+        ]
+      },
+      {
+        "municipality": "Boconó",
+        "parishes": [
+          "Boconó",
+          "El Carmen",
+          "Mosquey",
+          "Ayacucho",
+          "Burbusay",
+          "General Ribas",
+          "Guaramacal",
+          "Vega de Guaramacal",
+          "Monseñor Jáuregui",
+          "Rafael Rangel",
+          "San Miguel",
+          "San José"
+        ]
+      },
+      {
+        "municipality": "Bolívar",
+        "parishes": [
+          "Sabana Grande",
+          "Cheregüé",
+          "Granados"
+        ]
+      },
+      {
+        "municipality": "Candelaria",
+        "parishes": [
+          "Arnoldo Gabaldón",
+          "Bolivia",
+          "Carrillo",
+          "Cegarra",
+          "Chejendé",
+          "Manuel Salvador Ulloa",
+          "San José"
+        ]
+      },
+      {
+        "municipality": "Carache",
+        "parishes": [
+          "Carache",
+          "La Concepción",
+          "Cuicas",
+          "Panamericana",
+          "Santa Cruz"
+        ]
+      },
+      {
+        "municipality": "Escuque",
+        "parishes": [
+          "Escuque",
+          "La Unión (El Alto Escuque)",
+          "Santa Rita",
+          "Sabana Libre"
+        ]
+      },
+      {
+        "municipality": "José Felipe Márquez Cañizalez",
+        "parishes": [
+          "El Socorro",
+          "Los Caprichos",
+          "Antonio José de Sucre"
+        ]
+      },
+      {
+        "municipality": "Juan Vicente Campos Elías",
+        "parishes": [
+          "Campo Elías",
+          "Arnoldo Gabaldón"
+        ]
+      },
+      {
+        "municipality": "La Ceiba",
+        "parishes": [
+          "Santa Apolonia",
+          "El Progreso",
+          "La Ceiba",
+          "Tres de Febrero"
+        ]
+      },
+      {
+        "municipality": "Miranda",
+        "parishes": [
+          "El Dividive",
+          "Agua Santa",
+          "Agua Caliente",
+          "El Cenizo",
+          "Valerita"
+        ]
+      },
+      {
+        "municipality": "Monte Carmelo",
+        "parishes": [
+          "Monte Carmelo",
+          "Buena Vista",
+          "Santa María del Horcón"
+        ]
+      },
+      {
+        "municipality": "Motatán",
+        "parishes": [
+          "Motatán",
+          "El Baño",
+          "Jalisco"
+        ]
+      },
+      {
+        "municipality": "Pampán",
+        "parishes": [
+          "Pampán",
+          "Flor de Patria",
+          "La Paz",
+          "Santa Ana"
+        ]
+      },
+      {
+        "municipality": "Pampanito",
+        "parishes": [
+          "Pampanito",
+          "La Concepción",
+          "Pampanito II"
+        ]
+      },
+      {
+        "municipality": "Rafael Rangel",
+        "parishes": [
+          "Betijoque",
+          "José Gregorio Hernández",
+          "La Pueblita",
+          "Los Cedros"
+        ]
+      },
+      {
+        "municipality": "San Rafael de Carvajal",
+        "parishes": [
+          "Carvajal",
+          "Campo Alegre",
+          "Antonio Nicolás Briceño",
+          "José Leonardo Suárez"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Sabana de Mendoza",
+          "Junín",
+          "Valmore Rodríguez",
+          "El Paraíso"
+        ]
+      },
+      {
+        "municipality": "Trujillo",
+        "parishes": [
+          "Andrés Linares",
+          "Chiquinquirá",
+          "Cristóbal Mendoza",
+          "Cruz Carrillo",
+          "Matriz",
+          "Monseñor Carrillo",
+          "Tres Esquinas"
+        ]
+      },
+      {
+        "municipality": "Urdaneta",
+        "parishes": [
+          "Cabimbú",
+          "Jajó",
+          "La Mesa de Esnujaque",
+          "Santiago",
+          "Tuñame",
+          "La Quebrada"
+        ]
+      },
+      {
+        "municipality": "Valera",
+        "parishes": [
+          "Juan Ignacio Montilla",
+          "La Beatriz",
+          "La Puerta",
+          "Mendoza del Valle de Momboy",
+          "Mercedes Díaz",
+          "San Luis"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Vargas",
+    "municipalities": [
+      {
+        "municipality": "Vargas",
+        "parishes": [
+          "Caraballeda",
+          "Carayaca",
+          "Carlos Soublette",
+          "Caruao Chuspa",
+          "Catia La Mar",
+          "El Junko",
+          "La Guaira",
+          "Macuto",
+          "Maiquetía",
+          "Naiguatá",
+          "Urimare"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Yaracuy",
+    "municipalities": [
+      {
+        "municipality": "Arístides Bastidas",
+        "parishes": [
+          "Arístides Bastidas"
+        ]
+      },
+      {
+        "municipality": "Bolívar",
+        "parishes": [
+          "Bolívar"
+        ]
+      },
+      {
+        "municipality": "Bruzual",
+        "parishes": [
+          "Chivacoa",
+          "Campo Elías"
+        ]
+      },
+      {
+        "municipality": "Cocorote",
+        "parishes": [
+          "Cocorote"
+        ]
+      },
+      {
+        "municipality": "Independencia",
+        "parishes": [
+          "Independencia"
+        ]
+      },
+      {
+        "municipality": "José Antonio Páez",
+        "parishes": [
+          "José Antonio Páez"
+        ]
+      },
+      {
+        "municipality": "La Trinidad",
+        "parishes": [
+          "La Trinidad"
+        ]
+      },
+      {
+        "municipality": "Manuel Monge",
+        "parishes": [
+          "Manuel Monge"
+        ]
+      },
+      {
+        "municipality": "Nirgua",
+        "parishes": [
+          "Salóm",
+          "Temerla",
+          "Nirgua"
+        ]
+      },
+      {
+        "municipality": "Peña",
+        "parishes": [
+          "San Andrés",
+          "Yaritagua"
+        ]
+      },
+      {
+        "municipality": "San Felipe",
+        "parishes": [
+          "San Javier",
+          "Albarico",
+          "San Felipe"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Sucre"
+        ]
+      },
+      {
+        "municipality": "Urachiche",
+        "parishes": [
+          "Urachiche"
+        ]
+      },
+      {
+        "municipality": "Veroes",
+        "parishes": [
+          "El Guayabo",
+          "Farriar"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Zulia",
+    "municipalities": [
+      {
+        "municipality": "Almirante Padilla",
+        "parishes": [
+          "Isla de Toas",
+          "Monagas"
+        ]
+      },
+      {
+        "municipality": "Baralt",
+        "parishes": [
+          "General Urdaneta",
+          "Libertador",
+          "Marcelino Briceño",
+          "Pueblo Nuevo",
+          "Manuel Guanipa Matos"
+        ]
+      },
+      {
+        "municipality": "Cabimas",
+        "parishes": [
+          "Ambrosio",
+          "Carmen Herrera",
+          "La Rosa",
+          "Germán Ríos Linares",
+          "San Benito",
+          "Rómulo Betancourt",
+          "Jorge Hernández",
+          "Punta Gorda",
+          "Arístides Calvani"
+        ]
+      },
+      {
+        "municipality": "Catatumbo",
+        "parishes": [
+          "Encontrados",
+          "Udón Pérez"
+        ]
+      },
+      {
+        "municipality": "Colón",
+        "parishes": [
+          "Moralito",
+          "San Carlos del Zulia",
+          "Santa Cruz del Zulia",
+          "Santa Bárbara",
+          "Urribarrí"
+        ]
+      },
+      {
+        "municipality": "Francisco Javier Pulgar",
+        "parishes": [
+          "Carlos Quevedo",
+          "Francisco Javier Pulgar",
+          "Simón Rodríguez",
+          "Guamo-Gavilanes"
+        ]
+      },
+      {
+        "municipality": "Páez",
+        "parishes": [
+          "Sinamaica",
+          "Alta Guajira",
+          "Elías Sánchez Rubio",
+          "Guajira"
+        ]
+      },
+      {
+        "municipality": "Jesús Enrique Lossada",
+        "parishes": [
+          "La Concepción",
+          "San José",
+          "Mariano Parra León",
+          "José Ramón Yépez"
+        ]
+      },
+      {
+        "municipality": "Jesús María Semprún",
+        "parishes": [
+          "Jesús María Semprún",
+          "Barí"
+        ]
+      },
+      {
+        "municipality": "La Cañada de Urdaneta",
+        "parishes": [
+          "Concepción",
+          "Andrés Bello",
+          "Chiquinquirá",
+          "El Carmelo",
+          "Potreritos"
+        ]
+      },
+      {
+        "municipality": "Lagunillas",
+        "parishes": [
+          "Libertad",
+          "Alonso de Ojeda",
+          "Venezuela",
+          "Eleazar López Contreras",
+          "Campo Lara"
+        ]
+      },
+      {
+        "municipality": "Machiques de Perijá",
+        "parishes": [
+          "Bartolomé de las Casas",
+          "Libertad",
+          "Río Negro",
+          "San José de Perijá"
+        ]
+      },
+      {
+        "municipality": "Mara",
+        "parishes": [
+          "San Rafael",
+          "La Sierrita",
+          "Las Parcelas",
+          "Luis de Vicente",
+          "Monseñor Marcos Sergio Godoy",
+          "Ricaurte",
+          "Tamare"
+        ]
+      },
+      {
+        "municipality": "Maracaibo",
+        "parishes": [
+          "Antonio Borjas Romero",
+          "Bolívar",
+          "Cacique Mara",
+          "Carracciolo Parra Pérez",
+          "Cecilio Acosta",
+          "Cristo de Aranza",
+          "Coquivacoa",
+          "Chiquinquirá",
+          "Francisco Eugenio Bustamante",
+          "Idelfonzo Vásquez",
+          "Juana de Ávila",
+          "Luis Hurtado Higuera",
+          "Manuel Dagnino",
+          "Olegario Villalobos.",
+          "Raúl Leoni",
+          "Santa Lucía",
+          "Venancio Pulgar",
+          "San Isidro"
+        ]
+      },
+      {
+        "municipality": "Miranda",
+        "parishes": [
+          "Altagracia",
+          "Faría",
+          "Ana María Campos",
+          "San Antonio",
+          "San José"
+        ]
+      },
+      {
+        "municipality": "Rosario de Perijá",
+        "parishes": [
+          "Donaldo García",
+          "El Rosario",
+          "Sixto Zambrano"
+        ]
+      },
+      {
+        "municipality": "San Francisco",
+        "parishes": [
+          "San Francisco",
+          "El Bajo",
+          "Domitila Flores",
+          "Francisco Ochoa",
+          "Los Cortijos",
+          "Marcial Hernández"
+        ]
+      },
+      {
+        "municipality": "Santa Rita",
+        "parishes": [
+          "Santa Rita",
+          "El Mene",
+          "Pedro Lucas Urribarrí",
+          "José Cenobio Urribarrí"
+        ]
+      },
+      {
+        "municipality": "Simón Bolívar",
+        "parishes": [
+          "Rafael Maria Baralt",
+          "Manuel Manrique",
+          "Rafael Urdaneta"
+        ]
+      },
+      {
+        "municipality": "Sucre",
+        "parishes": [
+          "Bobures",
+          "Gibraltar",
+          "Heras",
+          "Monseñor Arturo Álvarez",
+          "Rómulo Gallegos",
+          "El Batey"
+        ]
+      },
+      {
+        "municipality": "Valmore Rodríguez",
+        "parishes": [
+          "Rafael Urdaneta",
+          "La Victoria",
+          "Raúl Cuenca"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Distrito Capital",
+    "municipalities": [
+      {
+        "municipality": "Libertador",
+        "parishes": [
+          "23 de enero",
+          "Altagracia",
+          "Antímano",
+          "Caricuao",
+          "Catedral",
+          "Coche",
+          "El Junquito",
+          "El Paraíso",
+          "El Recreo",
+          "El Valle",
+          "Candelaria",
+          "La Pastora",
+          "La Vega",
+          "Macarao",
+          "San Agustín",
+          "San Bernardino",
+          "San José",
+          "San Juan",
+          "San Pedro",
+          "Santa Rosalía",
+          "Santa Teresa",
+          "Sucre (Catia)"
+        ]
+      }
+    ]
+  }
+]

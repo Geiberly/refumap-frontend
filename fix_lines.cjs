@@ -1,0 +1,35 @@
+const fs = require('fs');
+const lines = fs.readFileSync('src/pages/admin/DashboardPage.jsx', 'utf8').split('\n');
+
+lines[8] = "  if (!d) return '—'";
+lines[31] = "  const up = sublabel.includes('↑')";
+lines[32] = "  const down = sublabel.includes('↓')";
+lines[40] = "        <p className=\"text-2xl font-black leading-none tracking-tight text-slate-950\">{value ?? '—'}</p>";
+lines[48] = "  const icon = item?.category?.icon || (type === 'report' ? '📋' : '📍')";
+lines[124] = "// PANEL DE ADMINISTRADOR (ESCRITORIO & MÓVIL)";
+lines[129] = "      {/* 1. MÉTRICAS PRINCIPALES */}";
+lines[137] = "        {/* COLA DE VERIFICACIÓN */}";
+lines[168] = "            <QuickAction to=\"/admin/reports\" icon=\"🔄\" title=\"Reasignar reportes\" description=\"Balancear carga de trabajo\" color=\"amber\" />";
+lines[169] = "            <QuickAction to=\"/admin\" icon=\"⬇️\" title=\"Exportar datos\" description=\"Descargar reportes y métricas\" color=\"green\" />";
+lines[170] = "            <QuickAction to=\"/admin/reports\" icon=\"📋\" title=\"Revisar reportes\" description=\"Ir a la cola de verificación\" color=\"blue\" />";
+lines[172] = "          <button className=\"mt-4 text-xs font-extrabold text-slate-500 hover:text-blue-700 w-full text-center\">Más acciones ›</button>";
+lines[180] = "      {/* GESTIÓN DE OPERADORES */}";
+lines[212] = "            <div className=\"flex justify-between items-center text-xs\"><span className=\"text-slate-600 font-medium flex items-center gap-2\"><i className=\"text-green-500\">✓</i> API y servicios</span><span className=\"font-bold text-green-600\">Operativo</span></div>";
+lines[213] = "            <div className=\"flex justify-between items-center text-xs\"><span className=\"text-slate-600 font-medium flex items-center gap-2\"><i className=\"text-green-500\">✓</i> Base de datos</span><span className=\"font-bold text-green-600\">Operativo</span></div>";
+lines[214] = "            <div className=\"flex justify-between items-center text-xs\"><span className=\"text-slate-600 font-medium flex items-center gap-2\"><i className=\"text-green-500\">✓</i> Mapas y geo</span><span className=\"font-bold text-green-600\">Operativo</span></div>";
+lines[215] = "            <div className=\"flex justify-between items-center text-xs\"><span className=\"text-slate-600 font-medium flex items-center gap-2\"><i className=\"text-amber-500\">⚠️</i> Integraciones</span><span className=\"font-bold text-amber-600\">Advertencia</span></div>";
+lines[237] = "                  <i className=\"w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 z-10 text-[10px]\">📋</i>";
+lines[245] = "                  <i className=\"w-5 h-5 rounded-full bg-green-100 text-green-600 flex items-center justify-center shrink-0 z-10 text-[10px]\">✅</i>";
+lines[252] = "                  <i className=\"w-5 h-5 rounded-full bg-red-100 text-red-600 flex items-center justify-center shrink-0 z-10 text-[10px]\">🚨</i>";
+lines[296] = "// PANEL DE OPERADOR (ESCRITORIO & MÓVIL)";
+lines[301] = "      {/* 1. MÉTRICAS OPERADOR */}";
+lines[304] = "          <div className=\"absolute -right-4 -bottom-4 text-6xl opacity-10\">🚨</div>";
+lines[307] = "          <p className=\"mt-2 text-[11px] font-bold text-red-700\">↑ 7 desde ayer</p>";
+lines[328] = "          <p className=\"mt-2 text-[11px] font-bold text-blue-700\">Últimos 7 días</p>";
+lines[361] = "              <div className=\"hidden md:block\"><span className={`rounded-full px-2.5 py-1 text-[10px] font-black ${bg}`}>🚨 {p}</span></div>";
+lines[363] = "              <span className=\"w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center border border-blue-100\">📍</span>";
+lines[468] = "            ⬇️ Exportar";
+lines[471] = "            📅 24 may - 26 jun, 2025 ▾";
+
+fs.writeFileSync('src/pages/admin/DashboardPage.jsx', lines.join('\n'), 'utf8');
+console.log("Done real line fix");

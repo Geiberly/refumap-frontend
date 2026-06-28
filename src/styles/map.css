@@ -1,0 +1,136 @@
+/* ── Estilos del mapa Leaflet para RefuMap ── */
+
+/* Leaflet necesita CSS explícito */
+@import 'leaflet/dist/leaflet.css';
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family) !important;
+  z-index: 1;
+}
+
+/* ── Marcadores personalizados ── */
+.refumap-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.refumap-marker:hover {
+  transform: rotate(-45deg) scale(1.15);
+}
+
+.refumap-marker .marker-icon {
+  transform: rotate(45deg);
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Colores de marker por estado */
+.refumap-marker.status-active     { background: var(--color-success); }
+.refumap-marker.status-full       { background: var(--color-warning); }
+.refumap-marker.status-closed     { background: var(--color-unverified); }
+.refumap-marker.status-unverified { background: #9ca3af; }
+.refumap-marker.status-danger     { background: var(--color-danger); animation: danger-pulse 2s infinite; }
+
+@keyframes danger-pulse {
+  0%, 100% { box-shadow: 0 2px 8px rgba(0,0,0,0.3), 0 0 0 0 rgba(220, 38, 38, 0.4); }
+  50%       { box-shadow: 0 2px 8px rgba(0,0,0,0.3), 0 0 0 10px rgba(220, 38, 38, 0); }
+}
+
+/* ── Popup personalizado ── */
+.leaflet-popup-content-wrapper {
+  border-radius: var(--radius-xl) !important;
+  box-shadow: var(--shadow-xl) !important;
+  border: 1px solid var(--color-border);
+  padding: 0 !important;
+  overflow: hidden;
+  min-width: 240px;
+  max-width: 300px;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.leaflet-popup-tip-container {
+  display: none; /* Usamos card sin tip */
+}
+
+.leaflet-popup-close-button {
+  top: 8px !important;
+  right: 8px !important;
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 18px !important;
+  color: var(--color-text-secondary) !important;
+  z-index: 10 !important;
+}
+
+/* ── Controles de mapa ── */
+.leaflet-control-zoom a {
+  border-radius: var(--radius-md) !important;
+  font-size: 18px !important;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px !important;
+  opacity: 0.6;
+}
+
+/* ── Cluster de marcadores ── */
+.marker-cluster {
+  background: rgba(30, 58, 95, 0.85) !important;
+  border: 3px solid white !important;
+  border-radius: 50% !important;
+  color: white !important;
+  font-family: var(--font-family) !important;
+  font-weight: var(--font-weight-bold) !important;
+  font-size: var(--font-size-sm) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.marker-cluster-small  { width: 40px !important; height: 40px !important; line-height: 34px !important; }
+.marker-cluster-medium { width: 50px !important; height: 50px !important; line-height: 44px !important; }
+.marker-cluster-large  { width: 60px !important; height: 60px !important; line-height: 54px !important; }
+
+.marker-cluster div {
+  background: transparent !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  line-height: inherit !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Road blocks marker ── */
+.roadblock-marker {
+  width: 32px;
+  height: 32px;
+  background: var(--color-warning-dark);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 2px solid white;
+  box-shadow: var(--shadow-md);
+}
+
+.roadblock-marker.critical {
+  background: var(--color-danger-dark);
+  animation: danger-pulse 1.5s infinite;
+}
