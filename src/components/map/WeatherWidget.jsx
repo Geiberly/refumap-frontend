@@ -11,16 +11,30 @@ export default function WeatherWidget({ center = DEFAULT_CENTER }) {
     const fetchWeather = async () => {
       try {
         setLoading(true)
+        // Check rate limit status
+        const rateLimitUntil = localStorage.getItem('weather_rate_limit_until')
+        if (rateLimitUntil && Date.now() < parseInt(rateLimitUntil)) {
+          if (isMounted) setWeather({ temperature_2m: 24, weather_code: 1 })
+          return
+        }
+
         const lat = center[0]
         const lng = center[1]
         // Open-Meteo API sin key
         const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,weather_code`)
+        
+        if (res.status === 429) {
+          localStorage.setItem('weather_rate_limit_until', (Date.now() + 60 * 60 * 1000).toString()) // 1 hora
+          if (isMounted) setWeather({ temperature_2m: 24, weather_code: 1 })
+          return
+        }
+
         const data = await res.json()
         if (isMounted) {
           if (data && data.current) {
             setWeather(data.current)
           } else {
-            // Fallback si excedió límite o falló
+            // Fallback si falló parseo o faltan datos
             setWeather({ temperature_2m: 24, weather_code: 1 }) // 24° Nublado por defecto
           }
         }
