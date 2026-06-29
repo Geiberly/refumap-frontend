@@ -44,6 +44,10 @@ const CATEGORY_COLORS = {
   peligro: "#ef4444",
   centro_acopio: "#14b8a6",
   acopio: "#14b8a6",
+  "centro-acopio": "#14b8a6",
+  "zona-peligrosa": "#ef4444",
+  "via-bloqueada": "#f59e0b",
+  "edificio-colapsado": "#64748b",
 };
 
 const STATUS_LABELS = {
@@ -68,6 +72,10 @@ const CATEGORY_ICONS = {
   peligro: "⚠️",
   centro_acopio: "📦",
   acopio: "📦",
+  "centro-acopio": "📦",
+  "zona-peligrosa": "⚠️",
+  "via-bloqueada": "🚧",
+  "edificio-colapsado": "🏚️",
 };
 
 function getMarkerColor(category, status) {

@@ -61,30 +61,30 @@ function LegendCard({ pointsCount, roadBlocksCount }) {
           hace 5 min
         </span>
       </div>
-      <div className="grid grid-cols-2 gap-x-6 gap-y-3 text-xs font-semibold text-slate-700">
+      <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-xs font-semibold text-slate-700">
         <span className="flex items-center gap-2">
-          <b className="h-3 w-3 rounded-full bg-blue-600" />
-          Salud / Hospitales
+          <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#2563eb] text-[11px] shadow-sm">🏥</b>
+          Hospitales
         </span>
         <span className="flex items-center gap-2">
-          <b className="h-3 w-3 rounded-full bg-green-600" />
-          Refugios seguros
+          <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#16a34a] text-[11px] shadow-sm">🏠</b>
+          Refugios
         </span>
         <span className="flex items-center gap-2">
-          <b className="h-3 w-3 rounded-full bg-red-500" />
+          <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#14b8a6] text-[11px] shadow-sm">📦</b>
+          Acopio
+        </span>
+        <span className="flex items-center gap-2">
+          <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#ef4444] text-[11px] shadow-sm">⚠️</b>
           Peligro
         </span>
         <span className="flex items-center gap-2">
-          <b className="h-3 w-3 rounded-full bg-amber-500" />
+          <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#f59e0b] text-[11px] shadow-sm">🚧</b>
           Vías bloqueadas
         </span>
         <span className="flex items-center gap-2">
-          <b className="h-3 w-3 rounded-full bg-purple-600" />
-          Personas / búsquedas
-        </span>
-        <span className="flex items-center gap-2">
-          <b className="h-3 w-3 rounded-full bg-slate-400" />
-          No verificado
+          <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#7c3aed] text-[11px] shadow-sm">👤</b>
+          Personas
         </span>
       </div>
       <div className="mt-4 grid grid-cols-2 gap-3 border-t border-slate-100 pt-4 text-xs">
