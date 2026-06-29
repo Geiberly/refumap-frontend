@@ -69,6 +69,7 @@ export default function PointDetailCard({ point, distance, onClose }) {
               </h2>
               {/* Badge "Con cupo" or status */}
               {point.status === 'active' && <span className="px-2 py-0.5 rounded-full bg-green-50 text-green-700 text-xs font-bold border border-green-200">Operativo</span>}
+              {point.status === 'verified' && <span className="px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200 flex items-center gap-1"><span className="text-sm leading-none">✅</span> Verificado</span>}
               {point.capacity_available > 0 && <span className="px-2 py-0.5 rounded-full bg-green-50 text-green-700 text-xs font-bold border border-green-200">Con cupo</span>}
               {point.capacity_available === 0 && <span className="px-2 py-0.5 rounded-full bg-red-50 text-red-700 text-xs font-bold border border-red-200">Lleno</span>}
               {point.status === 'danger' && <span className="px-2 py-0.5 rounded-full bg-red-50 text-red-700 text-xs font-bold border border-red-200">Peligro</span>}
@@ -131,8 +132,10 @@ export default function PointDetailCard({ point, distance, onClose }) {
           {/* Footer Metadata */}
           <div className="flex items-center gap-1.5 text-xs text-slate-500 mt-2">
             <span>Actualizado {formatDate(point.updated_at)} por</span>
-            <span className="font-semibold text-slate-700">{point.source === 'operator' ? 'Operador' : 'Ciudadano'}</span>
-            {point.source === 'operator' && (
+            <span className="font-semibold text-slate-700">
+              {point.source === 'operator' ? 'Operador' : point.source === 'official' ? 'API Oficial' : 'Ciudadano'}
+            </span>
+            {(point.source === 'operator' || point.source === 'official') && (
               <svg className="w-3.5 h-3.5 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
