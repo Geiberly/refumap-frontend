@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { getAdmittedPeople } from '../api/admittedPeople'
+import { getHospitals } from '../api/hospitalNeeds'
 
 export default function AdmittedPersonSearchPage() {
   const location = useLocation()
@@ -10,6 +11,7 @@ export default function AdmittedPersonSearchPage() {
   const [search, setSearch] = useState('')
   const [selectedHospital, setSelectedHospital] = useState(prefilledHospitalName)
   const [loading, setLoading] = useState(true)
+  const [allHospitals, setAllHospitals] = useState([])
 
   const fetchPeople = async (query = '') => {
     setLoading(true)
@@ -25,6 +27,9 @@ export default function AdmittedPersonSearchPage() {
 
   useEffect(() => {
     fetchPeople()
+    getHospitals()
+      .then(({ data }) => setAllHospitals(data.data))
+      .catch(console.error)
   }, [])
 
   const handleSearch = (e) => {
@@ -55,12 +60,13 @@ export default function AdmittedPersonSearchPage() {
   const uniqueHospitals = useMemo(() => {
     const hospitals = new Set()
     if (prefilledHospitalName) hospitals.add(prefilledHospitalName)
+    allHospitals.forEach(h => hospitals.add(h.name))
     people.forEach(p => {
       const hName = p.hospital?.name || p.hospital_name_snapshot
       if (hName) hospitals.add(hName)
     })
     return Array.from(hospitals).sort()
-  }, [people, prefilledHospitalName])
+  }, [people, prefilledHospitalName, allHospitals])
 
   // Aplicar filtro local de hospital
   const filteredPeople = useMemo(() => {
@@ -154,13 +160,28 @@ export default function AdmittedPersonSearchPage() {
         ) : filteredPeople.length === 0 ? (
           <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-8 text-center">
             <div className="text-4xl mb-4 opacity-80">🔍</div>
-            <h3 className="text-lg font-black text-slate-800 mb-2">Escribe un nombre, apodo o cédula y dale buscar</h3>
-            <p className="text-slate-500 max-w-md mx-auto mb-6 text-sm">La información proviene de reportes ciudadanos y hospitales. Así podemos buscar en nuestra base de datos para ayudarte a localizar a esa persona.</p>
-            <Link to="/report-person">
-              <button className="rounded-full bg-[#001b3c] px-6 py-2.5 font-bold text-white shadow-md hover:bg-blue-900 transition-all">
-                Reportar persona ingresada
-              </button>
-            </Link>
+            {people.length > 0 && selectedHospital ? (
+              <>
+                <h3 className="text-lg font-black text-slate-800 mb-2">Esta persona no se encuentra en este hospital</h3>
+                <p className="text-slate-500 max-w-md mx-auto mb-6 text-sm">Puede verificar poniendo "Todos los hospitales" o seleccionando otro hospital.</p>
+                <button 
+                  onClick={() => setSelectedHospital('')} 
+                  className="rounded-full bg-[#001b3c] px-6 py-2.5 font-bold text-white shadow-md hover:bg-blue-900 transition-all"
+                >
+                  Buscar en todos los hospitales
+                </button>
+              </>
+            ) : (
+              <>
+                <h3 className="text-lg font-black text-slate-800 mb-2">Escribe un nombre, apodo o cédula y dale buscar</h3>
+                <p className="text-slate-500 max-w-md mx-auto mb-6 text-sm">La información proviene de reportes ciudadanos y hospitales. Así podemos buscar en nuestra base de datos para ayudarte a localizar a esa persona.</p>
+                <Link to="/report-person">
+                  <button className="rounded-full bg-[#001b3c] px-6 py-2.5 font-bold text-white shadow-md hover:bg-blue-900 transition-all">
+                    Reportar persona ingresada
+                  </button>
+                </Link>
+              </>
+            )}
           </div>
         ) : (
           <div className="grid gap-4">
