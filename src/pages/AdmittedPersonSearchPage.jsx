@@ -4,11 +4,11 @@ import { getAdmittedPeople } from '../api/admittedPeople'
 
 export default function AdmittedPersonSearchPage() {
   const location = useLocation()
-  const prefilledHospitalId = location.state?.prefilledHospitalId?.toString() || ''
+  const prefilledHospitalName = location.state?.prefilledHospitalName || ''
 
   const [people, setPeople] = useState([])
   const [search, setSearch] = useState('')
-  const [selectedHospital, setSelectedHospital] = useState(prefilledHospitalId)
+  const [selectedHospital, setSelectedHospital] = useState(prefilledHospitalName)
   const [loading, setLoading] = useState(true)
 
   const fetchPeople = async (query = '') => {
@@ -54,12 +54,13 @@ export default function AdmittedPersonSearchPage() {
   // Extraer hospitales únicos para el filtro
   const uniqueHospitals = useMemo(() => {
     const hospitals = new Set()
+    if (prefilledHospitalName) hospitals.add(prefilledHospitalName)
     people.forEach(p => {
       const hName = p.hospital?.name || p.hospital_name_snapshot
       if (hName) hospitals.add(hName)
     })
     return Array.from(hospitals).sort()
-  }, [people])
+  }, [people, prefilledHospitalName])
 
   // Aplicar filtro local de hospital
   const filteredPeople = useMemo(() => {
@@ -152,9 +153,9 @@ export default function AdmittedPersonSearchPage() {
           </div>
         ) : filteredPeople.length === 0 ? (
           <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-8 text-center">
-            <div className="text-4xl mb-4 opacity-80">🛏️</div>
-            <h3 className="text-lg font-black text-slate-800 mb-2">Aún no encontramos a esa persona</h3>
-            <p className="text-slate-500 max-w-md mx-auto mb-6 text-sm">La información proviene de reportes ciudadanos y hospitales. Intenta con un apodo o verifica la ortografía.</p>
+            <div className="text-4xl mb-4 opacity-80">🔍</div>
+            <h3 className="text-lg font-black text-slate-800 mb-2">Escribe un nombre, apodo o cédula y dale buscar</h3>
+            <p className="text-slate-500 max-w-md mx-auto mb-6 text-sm">La información proviene de reportes ciudadanos y hospitales. Así podemos buscar en nuestra base de datos para ayudarte a localizar a esa persona.</p>
             <Link to="/report-person">
               <button className="rounded-full bg-[#001b3c] px-6 py-2.5 font-bold text-white shadow-md hover:bg-blue-900 transition-all">
                 Reportar persona ingresada
