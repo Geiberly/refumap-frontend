@@ -71,7 +71,7 @@ function LegendCard({ pointsCount, roadBlocksCount }) {
           Refugios
         </span>
         <span className="flex items-center gap-2">
-          <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#14b8a6] text-[11px] shadow-sm">📦</b>
+          <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#8b5cf6] text-[11px] shadow-sm">📦</b>
           Acopio
         </span>
         <span className="flex items-center gap-2">
@@ -81,10 +81,6 @@ function LegendCard({ pointsCount, roadBlocksCount }) {
         <span className="flex items-center gap-2">
           <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#f59e0b] text-[11px] shadow-sm">🚧</b>
           Vías bloqueadas
-        </span>
-        <span className="flex items-center gap-2">
-          <b className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#7c3aed] text-[11px] shadow-sm">👤</b>
-          Personas
         </span>
       </div>
       <div className="mt-4 grid grid-cols-2 gap-3 border-t border-slate-100 pt-4 text-xs">

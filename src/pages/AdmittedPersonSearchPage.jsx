@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { getAdmittedPeople } from '../api/admittedPeople'
 
 export default function AdmittedPersonSearchPage() {
+  const location = useLocation()
+  const prefilledHospitalId = location.state?.prefilledHospitalId?.toString() || ''
+
   const [people, setPeople] = useState([])
   const [search, setSearch] = useState('')
-  const [selectedHospital, setSelectedHospital] = useState('')
+  const [selectedHospital, setSelectedHospital] = useState(prefilledHospitalId)
   const [loading, setLoading] = useState(true)
 
   const fetchPeople = async (query = '') => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { reportAdmittedPerson } from '../api/admittedPeople'
 import { getHospitals } from '../api/hospitalNeeds'
 import { FormPageLayout } from '../components/layout/FormPageLayout'
@@ -11,6 +11,7 @@ import { Button } from '../components/ui/Button'
 
 export default function AdmittedPersonReportPage() {
   const navigate = useNavigate()
+  const location = useLocation()
   
   const [form, setForm] = useState({
     full_name: '',
@@ -19,7 +20,7 @@ export default function AdmittedPersonReportPage() {
     alias: '',
     approx_age: '',
     sex: '',
-    hospital_id: '',
+    hospital_id: location.state?.prefilledHospitalId || '',
     status_general: 'ingresada',
     admitted_at: '',
     public_notes: '',

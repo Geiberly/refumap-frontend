@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
-export default function WeatherWidget({ center = [10.48, -66.9] }) {
+const DEFAULT_CENTER = [10.48, -66.9]
+
+export default function WeatherWidget({ center = DEFAULT_CENTER }) {
   const [weather, setWeather] = useState(null)
   const [loading, setLoading] = useState(true)
 

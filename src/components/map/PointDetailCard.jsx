@@ -43,6 +43,14 @@ export default function PointDetailCard({ point, distance, onClose }) {
     })
   }
 
+  const handleRegisterPerson = () => {
+    navigate('/report-person', { state: { prefilledHospitalId: point.id, prefilledHospitalName: point.name } })
+  }
+  
+  const handleSearchPerson = () => {
+    navigate('/search-person', { state: { prefilledHospitalId: point.id, prefilledHospitalName: point.name } })
+  }
+
   // Determine colors based on point category
   const iconBg = point.category?.color ? point.category.color + '20' : '#e0e7ff'
   const iconColor = point.category?.color || '#4f46e5'
@@ -179,6 +187,27 @@ export default function PointDetailCard({ point, distance, onClose }) {
           >
             Ver en OpenStreetMap
           </a>
+        )}
+
+        {point.category?.slug === 'hospital' && (
+          <div className="flex flex-col gap-2 mt-2 pt-2 border-t border-slate-100">
+            <Button 
+              variant="primary" 
+              fullWidth 
+              className="bg-purple-600 hover:bg-purple-700 text-white py-2 text-xs"
+              onClick={handleSearchPerson}
+            >
+              🔍 Buscar persona ingresada
+            </Button>
+            <Button 
+              variant="secondary" 
+              fullWidth 
+              className="bg-purple-50 hover:bg-purple-100 text-purple-700 py-2 border-purple-200 text-xs"
+              onClick={handleRegisterPerson}
+            >
+              📝 Registrar persona
+            </Button>
+          </div>
         )}
         
         <Button 
