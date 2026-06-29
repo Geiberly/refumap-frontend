@@ -690,9 +690,8 @@ export default function HomePage() {
           <Logo compact />
           <p>© 2025 RefuMap Venezuela. Todos los derechos reservados.</p>
           <div className="flex gap-8">
-            <Link to="#" className="hover:text-[#001b3c] dark:hover:text-white transition">Privacidad</Link>
-            <Link to="#" className="hover:text-[#001b3c] dark:hover:text-white transition">Términos</Link>
-            <Link to="#" className="hover:text-[#001b3c] dark:hover:text-white transition">Contacto</Link>
+            <Link to="/privacidad" className="hover:text-[#001b3c] dark:hover:text-white transition">Privacidad</Link>
+            <Link to="/terminos" className="hover:text-[#001b3c] dark:hover:text-white transition">Términos</Link>
           </div>
         </div>
       </footer>

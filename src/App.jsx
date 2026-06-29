@@ -21,6 +21,8 @@ const ReportHospitalPage = lazy(() => import('./pages/reports/ReportHospitalPage
 const ReportRoadIssuePage = lazy(() => import('./pages/reports/ReportRoadIssuePage'))
 const ReportDangerZonePage = lazy(() => import('./pages/reports/ReportDangerZonePage'))
 const ReportHelpPointPage = lazy(() => import('./pages/reports/ReportHelpPointPage'))
+const PrivacyPage = lazy(() => import('./pages/PrivacyPage'))
+const TermsPage = lazy(() => import('./pages/TermsPage'))
 
 // Panel admin — lazy loaded como módulo independiente
 const AdminLayout          = lazy(() => import('./components/layout/AdminLayout'))
@@ -77,6 +79,10 @@ export default function App() {
           <Route path="/reportar/falla-camino" element={<ReportRoadIssuePage />} />
           <Route path="/reportar/zona-peligrosa" element={<ReportDangerZonePage />} />
           <Route path="/reportar/centro-acopio" element={<ReportHelpPointPage />} />
+          
+          {/* Legales */}
+          <Route path="/privacidad" element={<PrivacyPage />} />
+          <Route path="/terminos" element={<TermsPage />} />
 
           {/* Login de admin */}
           <Route path="/refu-control" element={<AdminLoginPage />} />
