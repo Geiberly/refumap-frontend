@@ -411,6 +411,9 @@ function BottomNavigation() {
 }
 
 export default function HomePage() {
+  const [openSection, setOpenSection] = useState(null)
+  const toggleSection = (id) => setOpenSection(openSection === id ? null : id)
+
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('theme') === 'dark' ||
@@ -599,7 +602,7 @@ export default function HomePage() {
 
         <section id="como-funciona" className="mx-auto grid w-full max-w-[1440px] grid-cols-1 gap-4 px-4 py-6 md:grid-cols-3 md:gap-8 md:px-8 lg:px-12 md:py-14">
           <div className="rounded-2xl border border-slate-200 dark:border-slate-700 border-l-4 border-l-[#10b981] bg-white dark:bg-slate-800 p-5 shadow-lg shadow-slate-200/60 dark:shadow-none md:p-7 transition-shadow hover:shadow-xl hover:shadow-slate-200/80">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 cursor-pointer md:cursor-default" onClick={() => toggleSection('info')}>
               <span className="grid h-11 w-11 place-items-center rounded-full bg-[#eafaf3] text-[#0ea66f]">
                 <Icon name="shield" className="h-5 w-5" />
               </span>
@@ -607,9 +610,9 @@ export default function HomePage() {
                 <h3 className="text-xl font-black text-[#001b3c] dark:text-white">Información confiable</h3>
                 <p className="text-sm text-slate-500 dark:text-slate-400 md:hidden">Fuentes verificadas</p>
               </div>
-              <Icon name="chevron" className="ml-auto h-5 w-5 text-slate-400 md:hidden" />
+              <Icon name="chevron" className={`ml-auto h-5 w-5 text-slate-400 md:hidden transition-transform ${openSection === 'info' ? 'rotate-180' : ''}`} />
             </div>
-            <ul className="mt-6 hidden space-y-4 text-sm text-slate-600 dark:text-slate-400 md:block">
+            <ul className={`mt-6 space-y-4 text-sm text-slate-600 dark:text-slate-400 md:block ${openSection === 'info' ? 'block' : 'hidden'}`}>
               {['Reportes revisables por operadores.', 'Estado visible: verificado o no verificado.', 'Datos personales protegidos.'].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <Icon name="check" className="mt-0.5 h-4 w-4 text-[#10b981]" /> {item}
@@ -619,7 +622,7 @@ export default function HomePage() {
           </div>
 
           <div className="rounded-2xl border border-slate-200 dark:border-slate-700 border-l-4 border-l-[#0b63f6] bg-white dark:bg-slate-800 p-5 shadow-lg shadow-slate-200/60 dark:shadow-none md:p-7 transition-shadow hover:shadow-xl hover:shadow-slate-200/80">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 cursor-pointer md:cursor-default" onClick={() => toggleSection('como')}>
               <span className="grid h-11 w-11 place-items-center rounded-full bg-[#edf4ff] text-[#0b63f6]">
                 <Icon name="info" className="h-5 w-5" />
               </span>
@@ -627,9 +630,9 @@ export default function HomePage() {
                 <h3 className="text-xl font-black text-[#001b3c] dark:text-white">Cómo funciona</h3>
                 <p className="text-sm text-slate-500 dark:text-slate-400 md:hidden">Guía de uso rápido</p>
               </div>
-              <Icon name="chevron" className="ml-auto h-5 w-5 text-slate-400 md:hidden" />
+              <Icon name="chevron" className={`ml-auto h-5 w-5 text-slate-400 md:hidden transition-transform ${openSection === 'como' ? 'rotate-180' : ''}`} />
             </div>
-            <div className="mt-6 hidden space-y-3 md:block">
+            <div className={`mt-6 space-y-3 md:block ${openSection === 'como' ? 'block' : 'hidden'}`}>
               {['Selecciona una acción', 'Envía el reporte', 'La comunidad verifica'].map((item, index) => (
                 <div key={item} className="flex items-center gap-4 rounded-xl bg-[#f5f7ff] dark:bg-slate-900/50 px-4 py-3 text-sm font-semibold text-[#001b3c] dark:text-slate-300">
                   <span className="grid h-6 w-6 place-items-center rounded-full bg-[#dbeafe] dark:bg-slate-800 text-xs font-black text-[#0b63f6] dark:text-blue-400">{index + 1}</span>
@@ -640,7 +643,7 @@ export default function HomePage() {
           </div>
 
           <div className="rounded-2xl border border-red-200 dark:border-red-900/50 border-l-4 border-l-[#dc2626] bg-[#fff1f1] dark:bg-red-950/20 p-5 shadow-lg shadow-red-200/40 dark:shadow-none md:p-7 transition-shadow hover:shadow-xl hover:shadow-red-200/60">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 cursor-pointer md:cursor-default" onClick={() => toggleSection('sos')}>
               <span className="grid h-11 w-11 place-items-center rounded-full bg-[#dc2626] text-white md:bg-transparent md:text-[#dc2626]">
                 <Icon name="sos" className="h-6 w-6" />
               </span>
@@ -648,9 +651,9 @@ export default function HomePage() {
                 <h3 className="text-xl font-black text-[#b91c1c]">Ayuda urgente</h3>
                 <p className="text-sm text-[#dc2626]/80 md:hidden">Contactos de emergencia</p>
               </div>
-              <Icon name="chevron" className="ml-auto h-5 w-5 text-[#dc2626] md:hidden" />
+              <Icon name="chevron" className={`ml-auto h-5 w-5 text-[#dc2626] md:hidden transition-transform ${openSection === 'sos' ? 'rotate-180' : ''}`} />
             </div>
-            <div className="mt-6 hidden space-y-4 md:block">
+            <div className={`mt-6 space-y-4 md:block ${openSection === 'sos' ? 'block' : 'hidden'}`}>
               <EmergencyCall label="Emergencias" value="911" phone="911" />
               <EmergencyCall label="Protección Civil" value="0800-PCIVIL-1" phone="08007248451" />
             </div>
