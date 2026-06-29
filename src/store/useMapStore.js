@@ -17,6 +17,7 @@ const useMapStore = create((set, get) => ({
   // Filtros activos
   filters: {
     type: '',
+    category: '',
     status: '',
     search: '',
   },
@@ -42,6 +43,7 @@ const useMapStore = create((set, get) => ({
   resetFilters: () => set({
     filters: {
       type: '',
+      category: '',
       status: '',
       search: '',
     },
@@ -52,6 +54,7 @@ const useMapStore = create((set, get) => ({
     const { filters } = get()
     const params = {}
     if (filters.type) params.type = filters.type
+    if (filters.category) params.category = filters.category
     if (filters.status) params.status = filters.status
     if (filters.search) params.search = filters.search
     return params
@@ -60,7 +63,7 @@ const useMapStore = create((set, get) => ({
   hasActiveFilters: () => {
     const { filters } = get()
     return !!(
-      filters.type || filters.status || filters.search
+      filters.type || filters.category || filters.status || filters.search
     )
   },
 }))

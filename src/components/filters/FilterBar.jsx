@@ -2,11 +2,11 @@ import React from "react";
 import useMapStore from "../../store/useMapStore";
 
 const QUICK_FILTERS = [
-  { key: "type", value: "refugio", label: "Refugio", tone: "green" },
-  { key: "type", value: "hospital", label: "Hospital", tone: "blue" },
-  { key: "type", value: "centro-acopio", label: "Acopio", tone: "purple" },
-  { key: "type", value: "zona-peligrosa", label: "Zona peligrosa", tone: "red" },
-  { key: "type", value: "via-bloqueada", label: "Vía bloqueada", tone: "amber" },
+  { key: "category", value: "refugio", label: "Refugio", tone: "green" },
+  { key: "category", value: "hospital", label: "Hospital", tone: "blue" },
+  { key: "category", value: "centro-acopio", label: "Acopio", tone: "purple" },
+  { key: "category", value: "zona-peligrosa", label: "Zona peligrosa", tone: "red" },
+  { key: "category", value: "via-bloqueada", label: "Vía bloqueada", tone: "amber" },
 ];
 
 const ACTIVE_STYLES = {
