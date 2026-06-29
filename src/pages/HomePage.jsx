@@ -423,6 +423,7 @@ export default function HomePage() {
   })
   
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
 
   useEffect(() => {
     if (isDark) {
@@ -534,9 +535,9 @@ export default function HomePage() {
                 <p className="text-xs font-medium dark:text-red-300 md:text-sm">Verifica la información antes de desplazarte.</p>
               </div>
             </div>
-            <Link to="#como-funciona" className="hidden items-center gap-1.5 rounded-full bg-white dark:bg-red-900/50 px-5 py-2 text-xs font-bold text-[#b91c1c] dark:text-red-300 shadow-sm transition hover:bg-[#fff7f7] dark:hover:bg-red-900 border border-red-200 dark:border-red-800 md:flex">
-              Más información <Icon name="chevron" className="h-3.5 w-3.5" />
-            </Link>
+            <button onClick={() => setIsInfoModalOpen(true)} className="flex items-center gap-1.5 rounded-full bg-white dark:bg-red-900/50 px-4 py-2 sm:px-5 sm:py-2 text-[10px] sm:text-xs font-bold text-[#b91c1c] dark:text-red-300 shadow-sm transition hover:bg-[#fff7f7] dark:hover:bg-red-900 border border-red-200 dark:border-red-800 shrink-0">
+              Más información <Icon name="chevron" className="h-3.5 w-3.5 hidden sm:block" />
+            </button>
           </div>
         </section>
 
@@ -701,6 +702,51 @@ export default function HomePage() {
       </Link>
       <BottomNavigation />
       <ChatBot />
+
+      {/* Modal de Información de Emergencia */}
+      {isInfoModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm" onClick={() => setIsInfoModalOpen(false)}>
+          <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden" onClick={e => e.stopPropagation()}>
+            <div className="bg-red-50 dark:bg-red-900/20 p-6 border-b border-red-100 dark:border-red-900/30">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex items-center justify-center w-12 h-12 bg-red-100 dark:bg-red-900/40 text-red-600 dark:text-red-400 rounded-2xl">
+                    <Icon name="warning" className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-black text-red-700 dark:text-red-400">Contexto de la Emergencia</h3>
+                    <p className="text-sm font-bold text-red-600/80 dark:text-red-400/80">Junio de 2026</p>
+                  </div>
+                </div>
+                <button onClick={() => setIsInfoModalOpen(false)} className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+                  <Icon name="plus" className="w-6 h-6 rotate-45" />
+                </button>
+              </div>
+            </div>
+            <div className="p-6">
+              <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed font-medium text-sm sm:text-base">
+                El pasado <strong className="text-slate-800 dark:text-white">24 de junio de 2026</strong>, Venezuela fue sacudida por un doble terremoto de gran magnitud que afectó severamente la infraestructura de múltiples ciudades.
+              </p>
+              <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed font-medium text-sm sm:text-base">
+                Esta catástrofe dejó a numerosas familias sin hogar y provocó la desaparición de cientos de personas durante las labores de evacuación iniciales. 
+              </p>
+              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-900/30 rounded-2xl p-4 sm:p-5 mb-2 mt-6">
+                <h4 className="font-bold text-blue-800 dark:text-blue-400 mb-2 flex items-center gap-2">
+                  <Icon name="shield" className="w-4 h-4" /> ¿Qué es RefuMap?
+                </h4>
+                <p className="text-xs sm:text-sm text-blue-700/80 dark:text-blue-300/80 font-medium">
+                  RefuMap nace como una plataforma de respuesta rápida ante esta emergencia. Nuestro objetivo es centralizar la información sobre refugios activos, centros de acopio y facilitar la búsqueda de personas ingresadas en centros de salud, conectando a familias separadas por el desastre.
+                </p>
+              </div>
+            </div>
+            <div className="p-4 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-100 dark:border-slate-800 text-center">
+              <button onClick={() => setIsInfoModalOpen(false)} className="px-6 py-2.5 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 font-bold rounded-xl transition-colors">
+                Entendido
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
