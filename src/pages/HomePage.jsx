@@ -231,7 +231,7 @@ const navItems = [
   { to: '/mapa', label: 'Mapa' },
   { to: '/search-person', label: 'Personas' },
   { to: '/reportar', label: 'Reportar' },
-  { to: '#como-funciona', label: 'Cómo funciona' },
+  { to: '/noticias', label: 'Noticias' },
 ]
 
 function ActionCard({ action }) {
@@ -392,7 +392,7 @@ function BottomNavigation() {
     { to: '/mapa', icon: 'map', label: 'Mapa', active: true },
     { to: '/search-person', icon: 'person', label: 'Personas' },
     { to: '/reportar', icon: 'plus', label: 'Reportar' },
-    { to: '#', icon: 'menu', label: 'Menú' },
+    { to: '/noticias', icon: 'info', label: 'Noticias' },
   ]
   return (
     <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0b1121]/95 shadow-[0_-12px_40px_rgba(15,23,42,0.10)] backdrop-blur md:hidden">

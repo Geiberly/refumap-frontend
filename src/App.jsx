@@ -8,6 +8,7 @@ import HomePage    from './pages/HomePage'
 import LoginPage   from './pages/LoginPage'
 import AdminLoginPage from './pages/AdminLoginPage'
 import ReportPage  from './pages/ReportPage'
+import NewsPage    from './pages/NewsPage'
 
 // Páginas con lazy loading
 const MapPage = lazy(() => import('./pages/MapPage'))
@@ -59,6 +60,7 @@ export default function App() {
         <Routes>
           {/* Rutas públicas */}
           <Route path="/" element={<HomePage />} />
+          <Route path="/noticias" element={<NewsPage />} />
           <Route path="/mapa" element={<MapPage />} />
           <Route path="/reportar" element={<ReportPage />} />
           <Route path="/login" element={<LoginPage />} />
