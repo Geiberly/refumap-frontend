@@ -1,12 +1,15 @@
 import React from 'react'
 
-export function Input({ label, error, required, icon, className = '', ...props }) {
+export function Input({ label, error, required, optional, hint, icon, className = '', ...props }) {
   return (
     <div className={`flex flex-col gap-1.5 ${className}`}>
       {label && (
-        <label className="text-sm font-bold text-slate-700">
-          {label} {required && <span className="text-red-500">*</span>}
-        </label>
+        <div className="flex justify-between items-baseline">
+          <label className="text-sm font-bold text-slate-700">
+            {label} {required && <span className="text-red-500 ml-0.5">*</span>}
+          </label>
+          {optional && <span className="text-xs text-slate-500 font-normal">(opcional)</span>}
+        </div>
       )}
       <div className="relative">
         {icon && (
@@ -23,6 +26,7 @@ export function Input({ label, error, required, icon, className = '', ...props }
           {...props}
         />
       </div>
+      {hint && !error && <span className="text-xs text-slate-500">{hint}</span>}
       {error && <span className="text-xs text-red-500 font-medium">{error}</span>}
     </div>
   )

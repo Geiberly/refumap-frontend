@@ -125,7 +125,7 @@ export default function ReportHospitalPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <Input label="Nombre del Hospital / Clínica" name="name" value={form.name} onChange={handleChange} placeholder="Ej. Hospital Central" required />
-            <Input label="Punto de Referencia" name="address" value={form.address} onChange={handleChange} placeholder="Ej. Av. Principal" required />
+            <Input label="Punto de Referencia" name="address" value={form.address} onChange={handleChange} placeholder="Ej. Av. Principal" hint="Puedes escribir una dirección aproximada o una referencia cercana." required />
             
             <div className="sm:col-span-2">
               <label className="text-sm font-medium text-slate-700 block mb-2">Ubicación exacta en el mapa <span className="text-red-500">*</span></label>
@@ -182,7 +182,7 @@ export default function ReportHospitalPage() {
             </Select>
             
             <div className="sm:col-span-2">
-              <Input label="Teléfono de Contacto (Si lo conoces)" name="contact_phone" value={form.contact_phone} onChange={handleChange} />
+              <Input label="Teléfono de Contacto" name="contact_phone" value={form.contact_phone} onChange={handleChange} optional hint="Opcional, pero útil para confirmar información." />
             </div>
           </div>
 
@@ -214,7 +214,7 @@ export default function ReportHospitalPage() {
             </div>
           </div>
 
-          <Textarea label="Notas o Comentarios Adicionales" name="notes" value={form.notes} onChange={handleChange} placeholder="Médicos voluntarios disponibles, rutas de acceso habilitadas..." />
+          <Textarea label="Notas o Comentarios Adicionales" name="notes" value={form.notes} onChange={handleChange} placeholder="Médicos voluntarios disponibles, rutas de acceso habilitadas..." optional />
 
           <hr className="border-border my-2" />
 
@@ -226,7 +226,7 @@ export default function ReportHospitalPage() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8 sm:mb-2">
-            <Input label="Tu Nombre (Opcional - Privado)" name="reporter_name" value={form.reporter_name} onChange={handleChange} />
+            <Input label="Tu Nombre (Privado)" name="reporter_name" value={form.reporter_name} onChange={handleChange} optional />
           </div>
 
           {/* Fixed bottom bar for mobile */}

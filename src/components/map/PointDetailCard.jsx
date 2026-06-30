@@ -56,7 +56,7 @@ export default function PointDetailCard({ point, distance, onClose }) {
   const iconColor = point.category?.color || '#4f46e5'
 
   return (
-    <div className="bg-white p-5 sm:p-6 flex flex-col sm:flex-row gap-6 w-full max-h-[85vh] sm:max-h-none overflow-y-auto">
+    <div className="bg-white p-5 sm:p-6 flex flex-col sm:flex-row gap-6 w-full max-h-[calc(100dvh-8rem)] sm:max-h-none overflow-y-auto">
       
       {/* Content Section */}
       <div className="flex-1 min-w-0 flex flex-col gap-4">

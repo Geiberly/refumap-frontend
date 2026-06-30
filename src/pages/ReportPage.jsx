@@ -279,7 +279,10 @@ export default function ReportPage() {
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-sm font-bold text-slate-700">Descripción útil</label>
+                  <div className="flex justify-between items-baseline mb-2">
+                    <label className="text-sm font-bold text-slate-700">Descripción útil</label>
+                    <span className="text-xs text-slate-500 font-normal">(opcional)</span>
+                  </div>
                   <textarea
                     name="description" value={form.description} onChange={handleChange}
                     className="h-28 w-full resize-none rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium focus:bg-white focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
@@ -298,7 +301,10 @@ export default function ReportPage() {
                       {gpsLoading ? 'Ubicando...' : <>📍 Usar GPS</>}
                     </button>
                     <div className="flex-1 w-full">
-                      <label className="mb-2 block text-sm font-bold text-slate-700">Dirección o referencia</label>
+                      <div className="flex justify-between items-baseline mb-2">
+                        <label className="text-sm font-bold text-slate-700">Dirección o referencia</label>
+                        <span className="text-xs text-slate-500 font-normal">(opcional si usas GPS)</span>
+                      </div>
                       <input
                         name="address" value={form.address} onChange={handleChange}
                         className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
@@ -313,7 +319,10 @@ export default function ReportPage() {
 
                 <div className="grid gap-6 sm:grid-cols-2">
                   <div>
-                    <label className="mb-2 block text-sm font-bold text-slate-700">Teléfono de contacto privado</label>
+                    <div className="flex justify-between items-baseline mb-2">
+                      <label className="text-sm font-bold text-slate-700">Teléfono de contacto privado</label>
+                      <span className="text-xs text-slate-500 font-normal">(opcional)</span>
+                    </div>
                     <input
                       name="contact_phone" value={form.contact_phone} onChange={handleChange}
                       className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium focus:bg-white focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
@@ -321,7 +330,10 @@ export default function ReportPage() {
                     />
                   </div>
                   <div>
-                    <label className="mb-2 block text-sm font-bold text-slate-700">Foto opcional</label>
+                    <div className="flex justify-between items-baseline mb-2">
+                      <label className="text-sm font-bold text-slate-700">Foto</label>
+                      <span className="text-xs text-slate-500 font-normal">(opcional)</span>
+                    </div>
                     <input
                       type="file" name="photo" accept="image/*" onChange={handleChange}
                       className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm font-medium file:mr-4 file:rounded-lg file:border-0 file:bg-blue-100 file:px-4 file:py-1 file:text-xs file:font-bold file:text-blue-700 hover:file:bg-blue-200"

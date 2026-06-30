@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { MapContainer, TileLayer } from 'react-leaflet'
+import { Link, useNavigate } from 'react-router-dom'
+import { MapContainer, TileLayer, CircleMarker, Tooltip } from 'react-leaflet'
 import { ChatBot } from '../components/ui/ChatBot'
+import { useMapPoints } from '../hooks/useMapPoints'
+import useMapStore from '../store/useMapStore'
 import 'leaflet/dist/leaflet.css'
 
 const iconPaths = {
@@ -173,17 +175,6 @@ function Logo({ compact = false }) {
 
 const primaryActions = [
   {
-    to: '/mapa',
-    title: 'Ver ayuda cerca',
-    mobileTitle: 'Ver ayuda',
-    description: 'Refugios, hospitales y puntos activos.',
-    icon: 'location',
-    className: 'bg-white dark:bg-slate-800 border-blue-100 dark:border-slate-700 text-[#001b3c] dark:text-white',
-    descClass: 'text-slate-600 dark:text-slate-400',
-    iconClass: 'bg-blue-600 dark:bg-slate-700 text-white',
-    arrowClass: 'bg-blue-50 dark:bg-slate-700 text-blue-600 dark:text-white',
-  },
-  {
     to: '/search-person',
     title: 'Buscar persona',
     mobileTitle: 'Buscar persona',
@@ -204,17 +195,6 @@ const primaryActions = [
     descClass: 'text-red-100 dark:text-white/90',
     iconClass: 'bg-white dark:bg-red-950 text-red-600 dark:text-red-400',
     arrowClass: 'bg-white/20 text-white',
-  },
-  {
-    to: '/mapa',
-    title: 'Mapa completo',
-    mobileTitle: 'Mapa',
-    description: 'Explora Venezuela por filtros.',
-    icon: 'map',
-    className: 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-[#001b3c] dark:text-white',
-    descClass: 'text-slate-600 dark:text-slate-400',
-    iconClass: 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-white',
-    arrowClass: 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-white',
   },
 ]
 
@@ -261,76 +241,70 @@ function ActionCard({ action }) {
 
 function VenezuelaMapPreview({ mobile = false, isDark = false }) {
   const center = [7.5, -66.0]
+  
   // Mapa Satelital de Esri (vívido, realista, verdes fuertes)
-  const tileUrl = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+  const tileUrl = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
+  
+  const navigate = useNavigate();
+  const { points } = useMapStore();
 
   return (
-    <div className={`${mobile ? 'h-[315px] rounded-xl' : 'min-h-[44rem] rounded-[2rem]'} relative overflow-hidden bg-[#0a1424] dark:bg-[#050a12] shadow-[0_14px_40px_rgba(30,64,175,0.08)] ring-1 ring-[#0f1f3a] dark:ring-slate-800 z-0`}>
+    <div className={`${mobile ? 'h-[315px] rounded-xl' : 'min-h-[44rem] rounded-[2rem]'} relative overflow-hidden bg-[#0a1424] dark:bg-[#050a12] shadow-[0_14px_40px_rgba(30,64,175,0.08)] ring-1 ring-slate-200 dark:ring-slate-800 z-0`}>
       <MapContainer 
         center={center} 
-        zoom={mobile ? 5 : 6} 
+        zoom={mobile ? 5 : 6.2} 
         scrollWheelZoom={false}
         zoomControl={false}
         attributionControl={false}
-        dragging={false}
-        touchZoom={false}
-        doubleClickZoom={false}
-        className={`absolute inset-0 h-full w-full z-0 pointer-events-none ${isDark ? '[&_.leaflet-layer]:brightness-[0.80] [&_.leaflet-layer]:contrast-[1.1] [&_.leaflet-layer]:saturate-100' : ''}`}
+        dragging={true}
+        touchZoom={true}
+        doubleClickZoom={true}
+        className={`absolute inset-0 h-full w-full z-0 ${isDark ? '[&_.leaflet-layer]:brightness-[0.80] [&_.leaflet-layer]:contrast-[1.1] [&_.leaflet-layer]:saturate-100' : ''}`}
       >
         <TileLayer url={tileUrl} />
+        {points.map(point => {
+           if (!point.latitude || !point.longitude) return null;
+           const pointColor = point.category?.color || '#3b82f6';
+           return (
+             <CircleMarker 
+               key={point.id}
+               center={[point.latitude, point.longitude]}
+               radius={6}
+               pathOptions={{
+                 color: 'white',
+                 weight: 2,
+                 fillColor: pointColor,
+                 fillOpacity: 0.95,
+               }}
+             >
+               <Tooltip direction="top" offset={[0, -5]} opacity={1}>
+                 <span className="font-bold text-xs">{point.name}</span>
+               </Tooltip>
+             </CircleMarker>
+           )
+        })}
       </MapContainer>
 
-      <div className="pointer-events-none absolute inset-0 z-10">
+      <div className="pointer-events-none absolute inset-0 z-10 shadow-[inset_0_0_60px_rgba(0,0,0,0.05)] dark:shadow-[inset_0_0_60px_rgba(0,0,0,0.4)]">
         {!mobile && (
-          <div className="pointer-events-auto absolute left-7 top-7 rounded-full bg-white dark:bg-slate-900 px-5 py-4 shadow-sm ring-1 ring-slate-200 dark:ring-slate-700">
-            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">Mapa activo</p>
-            <p className="text-sm font-bold text-[#001b3c] dark:text-white">Venezuela</p>
+          <div className="pointer-events-auto absolute left-7 top-7 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md px-5 py-3 shadow-sm ring-1 ring-slate-200/50 dark:ring-slate-700/50 transition-all hover:bg-white dark:hover:bg-slate-900">
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500 dark:text-slate-400">Centros Activos</p>
+            <p className="text-sm font-black text-[#001b3c] dark:text-white flex items-center gap-2">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500"></span>
+              </span>
+              En tiempo real
+            </p>
           </div>
         )}
 
         <Link
           to="/mapa"
-          className={`${mobile ? 'hidden' : 'flex'} pointer-events-auto absolute right-7 top-7 items-center gap-2 rounded-lg bg-blue-950 px-5 py-2.5 text-sm font-black !text-white shadow-md border border-blue-800 transition hover:bg-blue-900`}
+          className={`${mobile ? 'hidden' : 'flex'} pointer-events-auto absolute right-7 bottom-7 items-center gap-2 rounded-2xl bg-[#001b3c] hover:bg-blue-700 px-6 py-3.5 text-[15px] font-black !text-white shadow-xl transition-all hover:-translate-y-1 hover:shadow-2xl`}
         >
-          Abrir mapa <Icon name="external" className="h-4 w-4" />
+          Explorar mapa completo <Icon name="external" className="h-4 w-4" />
         </Link>
-
-        {mobile && (
-          <div className="pointer-events-auto absolute left-4 top-4 flex items-center gap-3 rounded-full bg-white/95 dark:bg-slate-900/95 px-4 py-2 text-xs font-semibold text-[#001b3c] dark:text-white shadow-sm backdrop-blur">
-            <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-[#0b63f6] dark:bg-blue-400" /> Refugios</span>
-            <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-[#16a3a3] dark:bg-teal-400" /> Hospitales</span>
-          </div>
-        )}
-
-        <div className="absolute inset-0">
-          <MapPin className="left-[42%] top-[45%]" tone="blue" icon="hospital" />
-          <MapPin className="left-[48%] top-[38%]" tone="teal" icon="box" />
-          <MapPin className="left-[54%] top-[27%]" tone="red" icon="warning" />
-          <MapPin className="left-[65%] top-[35%]" tone="red" icon="warning" />
-          <MapPin className="left-[72%] top-[55%]" tone="navy" icon="hospital" />
-          {mobile && <MapPin className="left-[50%] top-[60%]" tone="cyan" icon="location" />}
-        </div>
-
-        {mobile ? (
-          <div className="pointer-events-auto absolute bottom-4 right-4 flex flex-col gap-3">
-            <button aria-label="Acercar" className="grid h-11 w-11 place-items-center rounded-full bg-white dark:bg-slate-800 text-[#001b3c] dark:text-white shadow-lg ring-1 ring-slate-200 dark:ring-slate-700">
-              <Icon name="plus" className="h-5 w-5" />
-            </button>
-            <button aria-label="Alejar" className="grid h-11 w-11 place-items-center rounded-full bg-white dark:bg-slate-800 text-[#001b3c] dark:text-white shadow-lg ring-1 ring-slate-200 dark:ring-slate-700">
-              <span className="h-0.5 w-5 rounded-full bg-current" />
-            </button>
-            <Link to="/mapa" aria-label="Abrir mi ubicación" className="grid h-11 w-11 place-items-center rounded-full bg-[#001b3c] text-white shadow-lg ring-4 ring-white/50">
-              <Icon name="location" className="h-5 w-5" />
-            </Link>
-          </div>
-        ) : (
-          <div className="pointer-events-auto absolute inset-x-7 bottom-7 grid grid-cols-4 gap-3">
-            <Stat number="24" label="Refugios" color="text-[#0b63f6] dark:text-blue-400" />
-            <Stat number="12" label="Hospitales" color="text-[#1960a3] dark:text-blue-300" />
-            <Stat number="18" label="Acopios" color="text-[#003d3c] dark:text-teal-400" />
-            <Stat number="8" label="Alertas" color="text-[#c9161d] dark:text-red-400" />
-          </div>
-        )}
       </div>
     </div>
   )
@@ -413,6 +387,16 @@ function BottomNavigation() {
 export default function HomePage() {
   const [openSection, setOpenSection] = useState(null)
   const toggleSection = (id) => setOpenSection(openSection === id ? null : id)
+
+  useMapPoints()
+
+  const [stats, setStats] = useState(null)
+
+  useEffect(() => {
+    import('../api/mapPoints').then(module => {
+      module.getStats().then(res => setStats(res.data.data)).catch(console.error)
+    })
+  }, [])
 
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {
@@ -557,6 +541,23 @@ export default function HomePage() {
               {primaryActions.map((action) => (
                 <ActionCard key={action.title} action={action} />
               ))}
+            </div>
+
+            <div className="mt-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-5 shadow-[0_12px_35px_rgba(15,23,42,0.06)] md:rounded-xl md:p-6 flex items-center justify-between transition-shadow hover:shadow-[0_18px_45px_rgba(15,23,42,0.12)]">
+              <div className="flex items-center gap-4">
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 md:h-11 md:w-11">
+                  <Icon name="users" className="h-6 w-6" />
+                </span>
+                <div>
+                  <h3 className="text-[13px] font-bold text-slate-500 dark:text-slate-400 leading-tight">Personas registradas en hospitales</h3>
+                  <p className="text-2xl md:text-3xl font-black text-[#001b3c] dark:text-white leading-none mt-1">
+                    {stats ? stats.personas_registradas : '...'}
+                  </p>
+                </div>
+              </div>
+              <Link to="/search-person" className="hidden sm:flex items-center gap-1 text-sm font-bold text-blue-600 dark:text-blue-400 hover:underline hover:text-blue-700 dark:hover:text-blue-300">
+                Buscar ahora <Icon name="chevron" className="h-4 w-4" />
+              </Link>
             </div>
           </div>
 

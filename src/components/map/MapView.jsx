@@ -91,7 +91,7 @@ function getMarkerColor(category, status) {
 }
 
 // Ícono con emojis para referencias visuales
-function createCustomIcon(category, status) {
+export function createCustomIcon(category, status) {
   const color = getMarkerColor(category, status);
   const slug = category?.slug || category?.name?.toLowerCase?.() || "";
   const emoji = CATEGORY_ICONS[slug] || "📍";
@@ -326,11 +326,15 @@ function PointMarker({ point, onPointSelect, getDistanceFromMe, location }) {
   const statusLabel = STATUS_LABELS[point.status] || "No verificado";
 
   const focusPoint = () => {
-    onPointSelect(point);
     map.flyTo([lat, lng], Math.max(map.getZoom(), 14), {
       animate: true,
       duration: 0.45,
     });
+  };
+
+  const openDetails = (e) => {
+    e.stopPropagation();
+    onPointSelect(point);
   };
 
   return (
@@ -342,7 +346,7 @@ function PointMarker({ point, onPointSelect, getDistanceFromMe, location }) {
       <Popup autoPan={false} closeButton={false}>
         <div
           style={{ padding: "12px", minWidth: "200px", cursor: "pointer" }}
-          onClick={focusPoint}
+          onClick={openDetails}
         >
           <div style={{ display: "flex", gap: "6px", marginBottom: "6px", flexWrap: "wrap" }}>
             <span

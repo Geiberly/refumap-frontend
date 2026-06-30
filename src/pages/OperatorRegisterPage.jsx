@@ -108,7 +108,7 @@ export default function OperatorRegisterPage() {
           </Select>
         </div>
         
-        <Textarea label="Motivo para ser operador" name="motivation" value={form.motivation} onChange={handleChange} rows="3" disabled={loading} />
+        <Textarea label="Motivo para ser operador" name="motivation" value={form.motivation} onChange={handleChange} rows="3" disabled={loading} optional />
 
         <div className="text-xs text-slate-500 mt-2">
           * Al registrarte aceptas los términos de uso responsable y el tratamiento de datos para la gestión de la emergencia. Tu cuenta deberá ser verificada por un administrador antes de poder acceder al sistema.

@@ -114,7 +114,7 @@ export default function ReportRoadIssuePage() {
             </div>
             
             <div className="sm:col-span-2">
-              <Input label="Punto de Referencia" name="address" value={form.address} onChange={handleChange} placeholder="Ej. Autopista Francisco Fajardo altura Altamira" required />
+              <Input label="Punto de Referencia" name="address" value={form.address} onChange={handleChange} placeholder="Ej. Autopista Francisco Fajardo altura Altamira" hint="Puedes escribir una dirección aproximada o una referencia cercana." required />
             </div>
 
             <div className="sm:col-span-2">
@@ -137,7 +137,7 @@ export default function ReportRoadIssuePage() {
             </div>
           </div>
 
-          <Textarea label="Descripción Breve" name="description" value={form.description} onChange={handleChange} placeholder="Detalles sobre lo ocurrido, si hay vías alternas..." />
+          <Textarea label="Descripción Breve" name="description" value={form.description} onChange={handleChange} placeholder="Detalles sobre lo ocurrido, si hay vías alternas..." optional hint="Agrega detalles que ayuden a verificar el reporte." />
 
           <hr className="border-border my-2" />
 
@@ -149,7 +149,7 @@ export default function ReportRoadIssuePage() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8 sm:mb-2">
-            <Input label="Tu Nombre (Opcional - Privado)" name="reporter_name" value={form.reporter_name} onChange={handleChange} />
+            <Input label="Tu Nombre (Privado)" name="reporter_name" value={form.reporter_name} onChange={handleChange} optional />
           </div>
 
           <div className="fixed bottom-0 left-0 w-full p-4 bg-white border-t border-border shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] sm:relative sm:p-0 sm:border-0 sm:shadow-none sm:bg-transparent z-50">

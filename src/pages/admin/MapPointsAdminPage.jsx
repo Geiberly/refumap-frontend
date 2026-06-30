@@ -318,7 +318,7 @@ export default function MapPointsAdminPage() {
         </div>
 
         <div className="form-group">
-          <label className="form-label">Dirección</label>
+          <label className="form-label">Dirección <span style={{ fontSize: '0.75rem', fontWeight: 'normal', color: 'var(--color-text-muted)' }}>(opcional)</span></label>
           <input name="address" value={form.address} onChange={handleFormChange} className="form-input" placeholder="Calle, número, colonia..." />
         </div>
 
@@ -337,11 +337,11 @@ export default function MapPointsAdminPage() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
           <div className="form-group">
-            <label className="form-label">Capacidad total</label>
+            <label className="form-label">Capacidad total <span style={{ fontSize: '0.75rem', fontWeight: 'normal', color: 'var(--color-text-muted)' }}>(opcional)</span></label>
             <input name="capacity_total" type="number" min="0" value={form.capacity_total} onChange={handleFormChange} className="form-input" placeholder="0" />
           </div>
           <div className="form-group">
-            <label className="form-label">Capacidad disponible</label>
+            <label className="form-label">Capacidad disponible <span style={{ fontSize: '0.75rem', fontWeight: 'normal', color: 'var(--color-text-muted)' }}>(opcional)</span></label>
             <input name="capacity_available" type="number" min="0" value={form.capacity_available} onChange={handleFormChange} className="form-input" placeholder="0" />
           </div>
         </div>
@@ -360,12 +360,12 @@ export default function MapPointsAdminPage() {
         </div>
 
         <div className="form-group">
-          <label className="form-label">Notas importantes</label>
+          <label className="form-label">Notas importantes <span style={{ fontSize: '0.75rem', fontWeight: 'normal', color: 'var(--color-text-muted)' }}>(opcional)</span></label>
           <textarea name="notes" value={form.notes} onChange={handleFormChange} className="form-textarea" rows={2} placeholder="Horarios, condiciones especiales..." />
         </div>
 
         <div className="form-group">
-          <label className="form-label">Teléfono de contacto</label>
+          <label className="form-label">Teléfono de contacto <span style={{ fontSize: '0.75rem', fontWeight: 'normal', color: 'var(--color-text-muted)' }}>(opcional)</span></label>
           <input name="contact_phone" type="tel" value={form.contact_phone} onChange={handleFormChange} className="form-input" placeholder="+502 1234-5678" />
         </div>
 

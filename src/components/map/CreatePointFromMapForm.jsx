@@ -245,9 +245,10 @@ export default function CreatePointFromMapForm({ type, location, onClose }) {
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-slate-700 mb-1">
-          Descripción / Detalles
-        </label>
+        <div className="flex justify-between items-baseline mb-1">
+          <label className="text-sm font-semibold text-slate-700">Descripción / Detalles</label>
+          <span className="text-xs text-slate-500 font-normal">(opcional)</span>
+        </div>
         <textarea
           name="description"
           value={formData.description}
@@ -259,9 +260,10 @@ export default function CreatePointFromMapForm({ type, location, onClose }) {
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-slate-700 mb-1">
-          Teléfono de contacto (Opcional)
-        </label>
+        <div className="flex justify-between items-baseline mb-1">
+          <label className="text-sm font-semibold text-slate-700">Teléfono de contacto</label>
+          <span className="text-xs text-slate-500 font-normal">(opcional)</span>
+        </div>
         <input
           type="text"
           name="contact_phone"

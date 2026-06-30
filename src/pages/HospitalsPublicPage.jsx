@@ -210,15 +210,17 @@ export default function HospitalsPublicPage() {
                     required
                   />
                   <Textarea 
-                    label="Detalles adicionales (Opcional)" 
+                    label="Detalles adicionales" 
                     value={reportForm.description} 
                     onChange={e => setReportForm({...reportForm, description: e.target.value})}
+                    optional
                     rows="2"
                   />
                   <Input 
-                    label="Tu Nombre (Opcional)" 
+                    label="Tu Nombre" 
                     value={reportForm.reporter_name} 
                     onChange={e => setReportForm({...reportForm, reporter_name: e.target.value})}
+                    optional
                   />
                   
                   <div className="pt-2 mt-2 border-t border-slate-100">

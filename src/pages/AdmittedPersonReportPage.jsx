@@ -120,7 +120,10 @@ export default function AdmittedPersonReportPage() {
             </div>
             
             <div>
-              <label className="text-sm font-medium text-slate-700 block mb-2">Cédula de Identidad (Opcional)</label>
+              <div className="flex justify-between items-baseline mb-2">
+                <label className="text-sm font-bold text-slate-700 block">Cédula de Identidad</label>
+                <span className="text-xs text-slate-500 font-normal">(opcional)</span>
+              </div>
               <div className="flex gap-2">
                 <select 
                   name="cedula_type" 
@@ -144,10 +147,10 @@ export default function AdmittedPersonReportPage() {
                 />
               </div>
             </div>
-            <Input label="Apodo / Referencia" name="alias" value={form.alias} onChange={handleChange} />
-            <Input label="Edad Aproximada" name="approx_age" value={form.approx_age} onChange={handleChange} />
+            <Input label="Apodo / Referencia" name="alias" value={form.alias} onChange={handleChange} optional />
+            <Input label="Edad Aproximada" name="approx_age" value={form.approx_age} onChange={handleChange} optional />
 
-            <Select label="Sexo" name="sex" value={form.sex} onChange={handleChange}>
+            <Select label="Sexo" name="sex" value={form.sex} onChange={handleChange} optional>
               <option value="">No especificado</option>
               <option value="Femenino">Femenino</option>
               <option value="Masculino">Masculino</option>
@@ -162,12 +165,15 @@ export default function AdmittedPersonReportPage() {
             </Select>
 
             <div className="flex flex-col gap-1.5 sm:col-span-2">
-              <label className="text-sm font-medium text-slate-700">Fecha/Hora de Ingreso</label>
+              <div className="flex justify-between items-baseline">
+                <label className="text-sm font-bold text-slate-700">Fecha/Hora de Ingreso</label>
+                <span className="text-xs text-slate-500 font-normal">(opcional)</span>
+              </div>
               <input type="datetime-local" className="w-full px-4 py-2.5 min-h-[44px] bg-white border border-border rounded-lg shadow-sm text-base text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all" name="admitted_at" value={form.admitted_at} onChange={handleChange} min="2026-06-24T18:00" />
             </div>
 
             <div className="sm:col-span-2">
-              <Textarea label="Notas Públicas" name="public_notes" value={form.public_notes} onChange={handleChange} placeholder="Ropa que vestía, señas particulares, acompañantes..." />
+              <Textarea label="Notas Públicas" name="public_notes" value={form.public_notes} onChange={handleChange} placeholder="Ropa que vestía, señas particulares, acompañantes..." optional />
             </div>
           </div>
 
@@ -181,8 +187,8 @@ export default function AdmittedPersonReportPage() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8 sm:mb-2">
-            <Input label="Tu Nombre (Privado)" name="reporter_name" value={form.reporter_name} onChange={handleChange} />
-            <Input label="Tu Contacto (Privado)" name="reporter_contact" value={form.reporter_contact} onChange={handleChange} />
+            <Input label="Tu Nombre (Privado)" name="reporter_name" value={form.reporter_name} onChange={handleChange} optional />
+            <Input label="Tu Contacto (Privado)" name="reporter_contact" value={form.reporter_contact} onChange={handleChange} optional />
           </div>
 
           <div className="fixed bottom-0 left-0 w-full p-4 bg-white border-t border-border shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] sm:relative sm:p-0 sm:border-0 sm:shadow-none sm:bg-transparent z-50">
